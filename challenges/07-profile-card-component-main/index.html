@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        position: relative;
+        font-family: sans-serif;
+        background-color: hsl(185, 75%, 39%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .card {
+        width: 350px;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .card .middle {
+        text-align: center;
+        position: relative;
+        margin-bottom: 10px;
+      }
+      .card .middle > img {
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        border: 6px solid white;
+      }
+      .card .middle > div {
+        margin-top: 70px;
+      }
+      .name--age {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 8px;
+        font-size: 18px;
+      }
+      .name {
+        font-weight: bold;
+      }
+      .age {
+        color: hsl(227, 10%, 46%);
+      }
+      .city {
+        font-size: 16px;
+        color: hsl(227, 10%, 46%);
+        margin-bottom: 10px;
+      }
+      .card .end {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+        border-top: 1px solid hsl(227, 10%, 46%);
+        width: 100%;
+      }
+      .end div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 25px;
+        width: 100px;
+      }
+      .number {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      .title {
+        font-size: 12px;
+        color: hsl(227, 10%, 46%);
+      }
+      .pattern {
+        position: absolute;
+        width: 60vw;
+        right: -10vw;
+        bottom: -35vw;
+        z-index: -1;
+      }
+      .pattern--top {
+        position: absolute;
+        left: -23vw;
+        top: -30vw;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <!-- start image -->
+      <img class="start" src="images/bg-pattern-card.svg" alt="pattern" />
+
+      <!-- middle part -->
+      <div class="middle">
+        <img src="images/image-victor.jpg" src="victor crest" />
+
+        <div class="info">
+          <p class="name--age">
+            <span class="name">Victor Crest</span>
+            <span class="age">26</span>
+          </p>
+          <p class="city">London</p>
+        </div>
+      </div>
+
+      <!-- end -->
+      <div class="end">
+        <div>
+          <p class="number">80K</p>
+          <p class="title">Followers</p>
+        </div>
+
+        <div>
+          <p class="number">803K</p>
+          <p class="title">Likes</p>
+        </div>
+
+        <div>
+          <p class="number">1.4K</p>
+          <p class="title">Photos</p>
+        </div>
+      </div>
+    </div>
+
+    <img
+      class="pattern--top"
+      src="images/bg-pattern-top.svg"
+      alt="pattern top"
+    />
+    <img
+      class="pattern"
+      src="images/bg-pattern-bottom.svg"
+      alt="pattern bottom"
+    />
+  </body>
+</html>
+
+<!-- Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>. -->

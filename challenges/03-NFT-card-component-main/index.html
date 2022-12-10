@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        font-family: Outfit;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(217, 54%, 11%);
+        height: 96vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .all {
+        background-color: hsl(216, 50%, 16%);
+        color: white;
+        width: 320px;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+      }
+      .image{
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .image:hover::after{
+        content: "";
+        position: absolute;
+        background-color: hsl(178, 100%, 50%);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+      }
+
+      .image img:first-child{
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+      }
+      /* .image::after:hover{
+        display: block;
+      } */
+      .image:hover img:last-child{
+        display: block;
+      }
+      .image img:last-child{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .number {
+        font-size: 20px;
+        margin: 20px 0;
+      }
+      .number:hover{
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+      }
+      .text {
+        font-size: 17px;
+        font-weight: 300;
+        color: hsl(215, 51%, 70%);
+      }
+      .price {
+        margin: 25px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .price p {
+        display: flex;
+        align-items: center;
+      }
+      .price p:first-child {
+        color: hsl(178, 100%, 50%);
+      }
+      .price p:last-child {
+        color: hsl(215, 51%, 70%);
+      }
+      .price p img {
+        margin-right: 5px;
+      }
+      .line {
+        background-color: hsl(215, 32%, 27%);
+        height: 1px;
+      }
+      .footer {
+        margin: 15px 0 0 0;
+        display: flex;
+
+        align-items: center;
+      }
+      .creator-name{
+        font-weight: 100;
+      }
+      .creator-name:hover{
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+      
+      }
+      .footer img {
+        margin-right: 20px;
+        width: 35px;
+        border-radius: 100%;
+        border: 1px solid white;
+      }
+      .creation-of{
+        color: hsl(215, 51%, 70%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <div class="image">
+        <img src="images/image-equilibrium.jpg" alt="equilibrium image" />
+        <img src="images/icon-view.svg" alt="veiw icon" />
+      </div>
+
+      <div>
+        <p class="number">Equilibrium #3429</p>
+        <p class="text">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="price">
+          <p>
+            <img src="images/icon-ethereum.svg" alt="etherium icon" />0.041 ETH
+          </p>
+          <p><img src="images/icon-clock.svg" alt="clock icon" />3 days left</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="footer">
+          <img src="images/image-avatar.png" alt="creator" />
+          <p><p class="creation-of">Creation of &nbsp; </p><p class="creator-name">Jules Wyvern</p></p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">alireza</a>.
+      </div> -->
+  </body>
+</html>

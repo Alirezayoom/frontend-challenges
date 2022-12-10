@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "red hat display";
+        background-color: hsl(225, 100%, 94%);
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .all {
+        width: 440px;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      }
+      .all img {
+        width: 100%;
+      }
+      .content {
+        color: hsl(223, 47%, 23%);
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 30px;
+      }
+      .content p:first-child {
+        font-size: 28px;
+        font-weight: 900;
+        margin-bottom: 20px;
+      }
+      .content p:last-child {
+        text-align: center;
+        line-height: 1.4;
+        font-size: 18px;
+        color: hsl(224, 23%, 55%);
+      }
+      .around {
+        padding: 45px;
+      }
+      .price {
+        display: flex;
+        justify-items: center;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: hsl(225, 100%, 98%);
+      }
+      .price > img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      .price > div {
+        margin-left: 10px;
+      }
+      .around > button {
+        width: 100%;
+        padding: 17px;
+        border-radius: 10px;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        border: none;
+        font-weight: 700;
+      }
+      .around > button:hover {
+        cursor: pointer;
+      }
+      .process {
+        color: white;
+        background-color: hsl(245, 75%, 52%);
+        box-shadow: 0 10px 20px rgba(0, 0, 255, 0.3);
+      }
+      .process:hover {
+        background-color: #766cf1;
+      }
+      .cancel {
+        margin-top: 20px;
+        color: hsl(224, 23%, 55%);
+        background-color: transparent;
+        font-weight: 900;
+      }
+      .cancel:hover {
+        color: hsl(223, 47%, 23%);
+      }
+      .name {
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+        margin-bottom: 5px;
+      }
+      .amount {
+        color: hsl(224, 23%, 55%);
+        font-weight: 400;
+      }
+      .price-change {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .price-change a {
+        font-weight: 900;
+        font-size: 16px;
+      }
+      .price-change a:hover {
+        color: #766cf1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <img src="images/illustration-hero.svg" />
+      <div class="around">
+        <div class="content">
+          <p>Order Summary</p>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="price">
+          <img src="images/icon-music.svg" alt="music icon" />
+          <div class="price-change">
+            <div>
+              <div class="name">Annual Plan</div>
+              <div class="amount">$59.99/year</div>
+            </div>
+            <div><a href="#">Change</a></div>
+          </div>
+        </div>
+        <button class="process">Proceed to Payment</button>
+        <button class="cancel">Cancel Order</button>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alireza</a>.
+  </div> -->
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        height: 95vh;
+        align-items: center;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .all {
+        width: 600px;
+        margin: 0 auto;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .content {
+        width: 50%;
+        padding: 30px;
+      }
+      .product-img-mobile {
+        display: none;
+      }
+      .product-img {
+        width: 50%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .perfume {
+        color: hsl(228, 12%, 48%);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .title {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 32px;
+        color: hsl(212, 21%, 14%);
+        margin: 20px 0;
+      }
+      .text {
+        color: hsl(228, 12%, 48%);
+        font-weight: bold;
+        margin-bottom: 30px;
+        line-height: 25px;
+      }
+      .amount {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        font-weight: bold;
+      }
+      .amount p:first-child {
+        font-size: 30px;
+        color: hsl(158, 36%, 37%);
+        margin-right: 20px;
+      }
+      .amount p:last-child {
+        font-size: 14px;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+      }
+      button:hover {
+        background-color: hsl(212, 21%, 14%);
+        cursor: pointer;
+      }
+      button {
+        width: 100%;
+        background-color: hsl(158, 36%, 37%);
+        height: 50px;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+        border: none;
+      }
+      button > img {
+        margin-right: 10px;
+      }
+      @media screen and (max-width: 700px) {
+        .all {
+          display: block;
+          width: 337px;
+          margin: 0 auto;
+        }
+        .content {
+          width: 100%;
+          padding: 30px;
+        }
+        .product-img {
+          display: none;
+        }
+        .product-img-mobile {
+          display: block;
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <img
+        class="product-img-mobile"
+        src="images/image-product-mobile.jpg"
+        alt="product-mobile"
+      />
+      <img
+        class="product-img"
+        src="images/image-product-desktop.jpg"
+        alt="product-desktop"
+      />
+
+      <div class="content">
+        <div>
+          <p class="perfume">Prefume</p>
+          <p class="title">Gabrielle Essence Eau De Parfum</p>
+          <p class="text">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="amount">
+            <p>$149.99</p>
+            <p>$169.99</p>
+          </div>
+          <button>
+            <img src="images/icon-cart.svg" alt="cart" />Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
