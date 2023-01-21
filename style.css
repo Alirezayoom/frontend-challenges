@@ -8,8 +8,34 @@ body {
   font-family: sans-serif;
 }
 
+/* header style */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-header {
+  width: 500px;
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-between;
+  border-bottom: 2px solid #007adf;
+  margin-bottom: 25px;
+}
+
+.inner-header p {
+  text-transform: capitalize;
+  color: transparent;
+  background: linear-gradient(to right, #007adf, #4facfe);
+  -webkit-background-clip: text;
+}
+
+/* main section that contains all cards */
 main {
   text-align: center;
+  display: grid;
+  justify-content: center;
 }
 
 main > h1 {
@@ -17,15 +43,79 @@ main > h1 {
   margin-bottom: 40px;
 }
 
-main > a {
-  text-decoration: none;
-  color: #111;
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 5px;
+/* card style */
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
-main > a:hover {
+/* left side of card */
+.left {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  background-size: cover;
+  height: 100%;
+  background-position: center center;
+  align-items: center;
+}
+
+/* right side of card */
+.right {
+  background-image: linear-gradient(45deg, #007adf, #4facfe);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.right .description {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  height: 70%;
+}
+
+.right .number {
+  font-size: 20px;
   color: #eee;
-  background-color: mediumslateblue;
+}
+
+.right button {
+  padding: 8px 25px;
+  border-radius: 100px;
+  border: none;
+  background-color: #eee;
+}
+
+.right button:hover {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 8px 29px;
+  transition: all 0.3s;
+}
+
+/* media queries */
+@media screen and (max-width: 500px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    height: 500px;
+    max-width: 300px;
+  }
 }
