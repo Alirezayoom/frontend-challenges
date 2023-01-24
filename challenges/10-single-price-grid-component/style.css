@@ -3,3 +3,28 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 99vh;
+  background-color: lightblue;
+  display: grid;
+  grid-template-rows: 97% 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #e5eff5;
+}
+
+.card {
+  width: 500px;
+  height: 350px;
+  background-color: blue;
+}
+
+.attribution {
+  display: flex;
+  align-self: flex-end;
+  font-size: 12px;
+}
