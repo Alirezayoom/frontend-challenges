@@ -14,9 +14,6 @@ body {
   font-family: sans-serif;
 }
 
-main {
-}
-
 .card {
   width: 700px;
   height: 500px;
@@ -25,10 +22,10 @@ main {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: grid;
-  grid-template-rows: 47% 58%;
+  grid-template-rows: 45% 55%;
 }
 
-/* up styles */
+/************************ up styles ************************/
 .up {
   background-color: white;
   padding: 44px 36px;
@@ -53,19 +50,72 @@ main {
   line-height: 1.6;
 }
 
-/* down styles */
+/************************ down styles ************************/
 .down {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  color: #e5eff5;
 }
 
 .down-1 {
   background-color: #2ab2af;
+  padding: 44px 36px;
+}
+
+.down-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.per-month {
+  font-size: 16px;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.down-1 button {
+  border: 0;
+  background-color: #c0df34;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  margin-top: 25px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.down-1 button:hover {
+  cursor: pointer;
 }
 
 .down-2 {
   background-color: rgba(42, 178, 175, 0.75);
+  padding: 44px 36px;
+}
+
+.down-2 ul li {
+  list-style: none;
+  margin-bottom: 2px;
+  opacity: 0.8;
+}
+
+/************************ footer style ************************/
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .attribution {
