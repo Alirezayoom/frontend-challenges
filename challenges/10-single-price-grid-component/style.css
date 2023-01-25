@@ -6,21 +6,66 @@
 
 body {
   height: 99vh;
-  background-color: lightblue;
   display: grid;
   grid-template-rows: 97% 3%;
   justify-content: center;
   align-items: center;
+  background-color: #e5eff5;
+  font-family: sans-serif;
 }
 
 main {
-  background-color: #e5eff5;
 }
 
 .card {
-  width: 500px;
-  height: 350px;
-  background-color: blue;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: 47% 58%;
+}
+
+/* up styles */
+.up {
+  background-color: white;
+  padding: 44px 36px;
+}
+
+.title {
+  font-size: 20px;
+  color: #2ab2af;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.subtitle {
+  color: #c0df34;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.description {
+  color: #98a6bd;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* down styles */
+.down {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.down-1 {
+  background-color: #2ab2af;
+}
+
+.down-2 {
+  background-color: rgba(42, 178, 175, 0.75);
 }
 
 .attribution {
