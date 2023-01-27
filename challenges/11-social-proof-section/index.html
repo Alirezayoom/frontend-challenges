@@ -3,37 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Social proof section</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    10,000+ of our users love our products. We only provide great products
-    combined with excellent customer service. See what our satisfied customers
-    are saying about our services. Rated 5 Stars in Reviews Rated 5 Stars in
-    Report Guru Rated 5 Stars in BestTech Colton Smith Verified Buyer "We needed
-    the same printed design as the one we had ordered a week prior. Not only did
-    they find the original order, but we also received it in time. Excellent!"
-    Irene Roberts Verified Buyer "Customer service is always excellent and very
-    quick turn around. Completely delighted with the simplicity of the purchase
-    and the speed of delivery." Anne Wallace Verified Buyer "Put an order with
-    this company and can only praise them for the very high standard. Will
-    definitely use them again and recommend them to everyone!"
+    <main>
+      <!--------------- heading ------------------>
+      <div class="heading">
+        <div class="heading__text">10,000+ of our users love our products.</div>
+        <div class="heading__description">
+          We only provide great products combined with excellent customer
+          service. See what our satisfied customers are saying about our
+          services.
+        </div>
+      </div>
+
+      <!--------------- rating ------------------>
+      <div class="rating">
+        <div class="rating__item rating__item-reviews">
+          Rated 5 Stars in Reviews
+        </div>
+        <div class="rating__item rating__item-report">
+          Rated 5 Stars in Report Guru
+        </div>
+        <div class="rating__item rating__item-besttech">
+          Rated 5 Stars in BestTech
+        </div>
+      </div>
+
+      <!--------------- cards ------------------>
+      <div class="cards">
+        <!-- card 1 -->
+        <div class="card">
+          <!-- card header -->
+          <div class="card__header">
+            <div class="card__header-image"></div>
+            <div class="card__header-user">
+              <div class="card__header-user-name">Colton Smith</div>
+              <div class="card__header-user-verfied">Verified Buyer</div>
+            </div>
+          </div>
+          <!-- card text -->
+          <div class="card__text">
+            "We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card">
+          <!-- card header -->
+          <div class="card__header">
+            <div class="card__header-image"></div>
+            <div class="card__header-user">
+              <div class="card__header-user-name">Irene Roberts</div>
+              <div class="card__header-user-verfied">Verified Buyer</div>
+            </div>
+          </div>
+          <!-- card text -->
+          <div class="card__text">
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card">
+          <!-- card header -->
+          <div class="card__header">
+            <div class="card__header-image"></div>
+            <div class="card__header-user">
+              <div class="card__header-user-name">Anne Wallace</div>
+              <div class="card__header-user-verfied">Verified Buyer</div>
+            </div>
+          </div>
+          <!-- card text -->
+          <div class="card__text">
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </div>
+        </div>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/Alirezayoom">Alireza</a>.
     </div>
   </body>
 </html>
