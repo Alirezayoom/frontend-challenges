@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 1200px;
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cards {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 12px;
+}
