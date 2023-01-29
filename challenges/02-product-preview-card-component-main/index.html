@@ -3,37 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <title>Product preview card component</title>
 
-    <title>Frontend Mentor | Product preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       * {
-        font-family: sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
       body {
+        font-family: sans-serif;
         background-color: hsl(30, 38%, 92%);
         display: flex;
         height: 95vh;
         align-items: center;
       }
       .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         font-size: 11px;
         text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
       }
       .all {
         width: 600px;
@@ -164,11 +161,11 @@
       </div>
     </div>
 
-    <!-- <div class="attribution">
+    <footer role="footer" class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    </footer>
   </body>
 </html>
