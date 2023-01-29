@@ -3,28 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | QR code component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <title>QR code component</title>
     <style>
       body {
-        font-family: outfit;
+        font-family: outfit, sans-serif;
         background-color: #d5e1ef;
-      }
-      .background {
-        height: 96vh;
+        height: 97vh;
+        width: 97vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,14 +23,14 @@
         width: 320px;
         border-radius: 20px;
         display: flex;
-        box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.1);
-        flex-flow: column;
+        flex-direction: column;
         align-items: center;
+        box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.1);
       }
-      .img {
+      .image {
         margin-top: 18px;
       }
-      .img > img {
+      .image > img {
         width: 280px;
         border-radius: 10px;
       }
@@ -51,7 +40,7 @@
         margin-bottom: 20px;
         text-align: center;
       }
-      h3 {
+      .content > h3 {
         font-weight: bold;
         color: #222;
       }
@@ -61,19 +50,17 @@
     </style>
   </head>
   <body>
-    <div class="background">
-      <div class="card">
-        <div class="img">
-          <img src="images/image-qr-code.png" alt="qr-image" />
-        </div>
+    <div class="card">
+      <div class="image">
+        <img src="images/image-qr-code.png" alt="qr-code" />
+      </div>
 
-        <div class="content">
-          <h3>Improve your front-end skills by building projects</h3>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
-        </div>
+      <div class="content">
+        <h3>Improve your front-end skills by building projects</h3>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
       </div>
     </div>
   </body>
