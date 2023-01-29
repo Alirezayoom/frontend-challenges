@@ -18,11 +18,13 @@
         box-sizing: border-box;
       }
       body {
+        position: relative;
         font-family: sans-serif;
-        background-color: hsl(30, 38%, 92%);
+        background-color: #f2ebe3;
         display: flex;
-        height: 95vh;
+        justify-content: center;
         align-items: center;
+        min-height: 100vh;
       }
       .attribution {
         position: absolute;
@@ -32,12 +34,13 @@
         font-size: 11px;
         text-align: center;
       }
-      .all {
+      .card {
         width: 600px;
         margin: 0 auto;
         display: flex;
         background-color: white;
         border-radius: 10px;
+        overflow: hidden;
       }
       .content {
         width: 50%;
@@ -48,52 +51,50 @@
       }
       .product-img {
         width: 50%;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
       }
-      .perfume {
-        color: hsl(228, 12%, 48%);
+      .content__perfume {
+        color: #6c7289;
         text-transform: uppercase;
         letter-spacing: 5px;
         font-weight: bold;
         font-size: 12px;
       }
-      .title {
+      .content__title {
         font-size: 32px;
         font-weight: bold;
         line-height: 32px;
-        color: hsl(212, 21%, 14%);
+        color: #1c232b;
         margin: 20px 0;
       }
-      .text {
-        color: hsl(228, 12%, 48%);
+      .content__text {
+        color: #6c7289;
         font-weight: bold;
         margin-bottom: 30px;
         line-height: 25px;
       }
-      .amount {
+      .content__price {
         display: flex;
         align-items: center;
         margin-bottom: 25px;
         font-weight: bold;
       }
-      .amount p:first-child {
+      .content__price p:first-child {
         font-size: 30px;
-        color: hsl(158, 36%, 37%);
+        color: #3c8067;
         margin-right: 20px;
       }
-      .amount p:last-child {
+      .content__price p:last-child {
         font-size: 14px;
         text-decoration: line-through;
-        color: hsl(228, 12%, 48%);
+        color: #6c7289;
       }
       button:hover {
-        background-color: hsl(212, 21%, 14%);
+        background-color: #1c232b;
         cursor: pointer;
       }
       button {
         width: 100%;
-        background-color: hsl(158, 36%, 37%);
+        background-color: #3c8067;
         height: 50px;
         border-radius: 5px;
         color: white;
@@ -107,10 +108,12 @@
         margin-right: 10px;
       }
       @media screen and (max-width: 700px) {
-        .all {
-          display: block;
-          width: 337px;
-          margin: 0 auto;
+        .card {
+          display: flex;
+          flex-direction: column;
+          max-width: 337px;
+          width: 100%;
+          margin: 60px 10px;
         }
         .content {
           width: 100%;
@@ -122,15 +125,14 @@
         .product-img-mobile {
           display: block;
           width: 100%;
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
           height: 100%;
         }
       }
     </style>
   </head>
+
   <body>
-    <div class="all">
+    <main role="main" class="card">
       <img
         class="product-img-mobile"
         src="images/image-product-mobile.jpg"
@@ -144,13 +146,13 @@
 
       <div class="content">
         <div>
-          <p class="perfume">Prefume</p>
-          <p class="title">Gabrielle Essence Eau De Parfum</p>
-          <p class="text">
+          <p class="content__perfume">Prefume</p>
+          <p class="content__title">Gabrielle Essence Eau De Parfum</p>
+          <p class="content__text">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div class="amount">
+          <div class="content__price">
             <p>$149.99</p>
             <p>$169.99</p>
           </div>
@@ -159,7 +161,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer role="footer" class="attribution">
       Challenge by
