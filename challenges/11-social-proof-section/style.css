@@ -48,6 +48,7 @@ main {
 
 .rating__item {
   max-width: 470px;
+  width: 100%;
   display: grid;
   grid-template-columns: max-content auto;
   gap: 20px;
@@ -137,4 +138,41 @@ main {
   bottom: 0;
   font-size: 12px;
   text-align: center;
+}
+
+/****************** media queries ******************/
+@media screen and (max-width: 1111px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    max-width: 375px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .heading {
+    text-align: center;
+    height: auto;
+    padding: 30px 0;
+  }
+  .heading__description {
+    padding-bottom: 0;
+  }
+  .rating {
+    justify-content: center;
+    max-width: 375px;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 30px 0;
+
+    justify-content: stretch;
+  }
+  .rating__item {
+    grid-template-columns: 1fr;
+    max-width: 375px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    padding-bottom: 30px;
+    gap: 15px;
+  }
 }
