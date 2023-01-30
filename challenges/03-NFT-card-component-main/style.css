@@ -1,39 +1,46 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: #3e52a3;
-}
 * {
-  font-family: Outfit;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.attribution {
+  position: absolute;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  bottom: 0;
+  color: #fff;
+}
+.attribution a {
+  color: #3e52a3;
+}
 body {
+  position: relative;
+  font-family: Outfit, sans-serif;
   background-color: #0d192b;
-  height: 96vh;
+  min-height: 100vh;
+  max-width: 100vw;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.all {
+.card {
   background-color: #14253d;
   color: white;
   width: 320px;
   border-radius: 10px;
   padding: 20px;
+  margin: 40px 10px;
   box-shadow: 0 10px 10px #0000004d;
 }
-.image {
+.card__image {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.image:hover::after {
+.card__image:hover::after {
   content: "";
   position: absolute;
   background-color: #00fff7;
@@ -44,15 +51,15 @@ body {
   opacity: 0.5;
 }
 
-.image img:first-child {
+.card__image img:first-child {
   display: block;
   width: 100%;
   border-radius: 10px;
 }
-.image:hover img:last-child {
+.card__image:hover img:last-child {
   display: block;
 }
-.image img:last-child {
+.card__image img:last-child {
   display: none;
   position: absolute;
   z-index: 1;
