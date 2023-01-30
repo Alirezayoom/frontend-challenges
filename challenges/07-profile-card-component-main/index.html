@@ -17,48 +17,47 @@
     <title>Profile card component</title>
   </head>
   <body>
-    <main class="card">
-      <!-- card header -->
-      <div class="card__header"></div>
+    <main>
+      <div class="card">
+        <!-- card header -->
+        <div class="card__header"></div>
 
-      <!-- card center -->
-      <div class="card__center">
-        <img
-          class="card__image"
-          src="images/image-victor.jpg"
-          alt="victor crest"
-        />
+        <!-- card center -->
+        <div class="card__center">
+          <img
+            class="card__image"
+            src="images/image-victor.jpg"
+            alt="victor crest"
+          />
 
-        <div class="card__information">
-          <div class="card__name">
-            <h1 class="name">Victor Crest</h1>
-            <p class="age">21</p>
+          <div class="card__information">
+            <div class="card__name">
+              <h1 class="name">Victor Crest</h1>
+              <p class="age">21</p>
+            </div>
+            <p class="city">London</p>
           </div>
-          <p class="city">London</p>
+        </div>
+
+        <!-- card footer -->
+        <div class="card__footer">
+          <div>
+            <p class="number">80K</p>
+            <p class="title">Followers</p>
+          </div>
+
+          <div>
+            <p class="number">803K</p>
+            <p class="title">Likes</p>
+          </div>
+
+          <div>
+            <p class="number">1.4K</p>
+            <p class="title">Photos</p>
+          </div>
         </div>
       </div>
-
-      <!-- card footer -->
-      <div class="card__footer">
-        <div>
-          <p class="number">80K</p>
-          <p class="title">Followers</p>
-        </div>
-
-        <div>
-          <p class="number">803K</p>
-          <p class="title">Likes</p>
-        </div>
-
-        <div>
-          <p class="number">1.4K</p>
-          <p class="title">Photos</p>
-        </div>
-      </div>
-    </main>
-
-    <!-- background patterns -->
-    <div role="patterns">
+      <!-- background patterns -->
       <img
         class="pattern__top"
         src="images/bg-pattern-top.svg"
@@ -69,7 +68,8 @@
         src="images/bg-pattern-bottom.svg"
         alt="pattern bottom"
       />
-    </div>
+    </main>
+
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
