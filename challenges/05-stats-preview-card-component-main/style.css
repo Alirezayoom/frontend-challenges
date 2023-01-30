@@ -17,14 +17,15 @@
   box-sizing: border-box;
 }
 body {
+  position: relative;
   font-family: Outfit, sans-serif;
   background-color: #090b1a;
-  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
-.all {
+.card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 7px;
@@ -32,13 +33,13 @@ body {
   width: 1080px;
   background-color: #1b1938;
 }
-.all > div > img {
+.card__image > img {
   display: block;
 }
-.image {
+.card__image {
   position: relative;
 }
-.image::after {
+.card__image::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -49,7 +50,7 @@ body {
   top: 0;
 }
 
-.text {
+.card__content {
   display: flex;
   flex-direction: column;
   color: white;
@@ -89,19 +90,21 @@ body {
   color: #ffffffbf;
 }
 @media screen and (max-width: 1080px) {
-  .all {
+  .card {
     display: flex;
     flex-direction: column-reverse;
+    max-width: 280px;
+    width: 100%;
+    margin: 40px 10px;
+  }
+  .card__image > img {
     width: 280px;
   }
-  .image > img {
-    width: 280px;
-  }
-  .image {
+  .card__image {
     height: 210px;
     overflow: hidden;
   }
-  .text {
+  .card__content {
     text-align: center;
     color: white;
     padding: 0 20px;
