@@ -3,17 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.attribution {
-  position: absolute;
-  width: 100%;
-  font-size: 11px;
-  text-align: center;
-  bottom: 0;
-  color: #fff;
-}
-.attribution a {
-  color: #3e52a3;
-}
 body {
   position: relative;
   font-family: Outfit, sans-serif;
@@ -123,4 +112,15 @@ body {
 }
 .creation-of {
   color: #8bacda;
+}
+.attribution {
+  position: absolute;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  bottom: 0;
+  color: #fff;
+}
+.attribution a {
+  color: #3e52a3;
 }
