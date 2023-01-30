@@ -86,27 +86,26 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.price p {
+.price div {
   display: flex;
   align-items: center;
 }
-.price p:first-child {
+.price div:first-child {
   color: #00fff7;
 }
-.price p:last-child {
+.price div:last-child {
   color: #8bacda;
 }
-.price p img {
+.price div img {
   margin-right: 5px;
 }
 .line {
   background-color: #2f415b;
   height: 1px;
 }
-.footer {
+.card__footer {
   margin: 15px 0 0 0;
   display: flex;
-
   align-items: center;
 }
 .creator-name {
@@ -116,7 +115,7 @@ body {
   color: #00fff7;
   cursor: pointer;
 }
-.footer img {
+.card__footer img {
   margin-right: 20px;
   width: 35px;
   border-radius: 100%;
