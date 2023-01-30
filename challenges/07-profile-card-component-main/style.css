@@ -5,7 +5,7 @@
 }
 body {
   position: relative;
-  font-family: sans-serif;
+  font-family: "kumbh sans", sans-serif;
   background-color: #19a2ae;
   display: flex;
   justify-content: center;
