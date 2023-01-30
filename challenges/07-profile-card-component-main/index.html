@@ -14,24 +14,28 @@
   </head>
   <body>
     <main class="card">
-      <!-- start image -->
-      <img class="start" src="images/bg-pattern-card.svg" alt="pattern" />
+      <!-- card header -->
+      <div class="card__header"></div>
 
-      <!-- middle part -->
-      <div class="middle">
-        <img src="images/image-victor.jpg" src="victor crest" />
+      <!-- card center -->
+      <div class="card__center">
+        <img
+          class="card__image"
+          src="images/image-victor.jpg"
+          src="victor crest"
+        />
 
-        <div class="info">
-          <p class="name--age">
-            <span class="name">Victor Crest</span>
-            <span class="age">26</span>
-          </p>
+        <div class="card__information">
+          <div class="card__name">
+            <h1 class="name">Victor Crest</h1>
+            <p class="age">21</p>
+          </div>
           <p class="city">London</p>
         </div>
       </div>
 
-      <!-- end -->
-      <div class="end">
+      <!-- card footer -->
+      <div class="card__footer">
         <div>
           <p class="number">80K</p>
           <p class="title">Followers</p>
@@ -49,13 +53,14 @@
       </div>
     </main>
 
+    <!-- background patterns -->
     <img
-      class="pattern--top"
+      class="pattern__top"
       src="images/bg-pattern-top.svg"
       alt="pattern top"
     />
     <img
-      class="pattern"
+      class="pattern__bottom"
       src="images/bg-pattern-bottom.svg"
       alt="pattern bottom"
     />

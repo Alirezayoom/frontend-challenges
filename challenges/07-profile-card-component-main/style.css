@@ -10,38 +10,43 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 98vh;
-}
-.attribution a {
-  color: #3e52a3;
+  min-height: 100vh;
+  overflow: hidden;
 }
 .card {
-  width: 350px;
-  background-color: white;
+  max-width: 350px;
+  min-height: 360px;
+  margin: 0 10px;
+  background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  grid-template-rows: 3fr 4fr 2.5fr;
+  gap: 0;
 }
-.card .middle {
-  text-align: center;
+.card__header {
+  background-image: url("images/bg-pattern-card.svg");
+}
+.card__center {
   position: relative;
-  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.card .middle > img {
-  border-radius: 100px;
+.card__image {
   position: absolute;
   top: 0;
-  transform: translate(-50%, -50%);
   left: 50%;
+  border-radius: 100px;
+  transform: translate(-50%, -50%);
   border: 6px solid #fff;
 }
-.card .middle > div {
+.card__information {
   margin-top: 70px;
 }
-.name--age {
+.card__name {
   display: flex;
   gap: 10px;
   margin-bottom: 8px;
@@ -49,23 +54,24 @@ body {
 }
 .name {
   font-weight: bold;
+  font-size: 1.2rem;
 }
 .age {
   color: #6a6f81;
 }
 .city {
-  font-size: 16px;
   color: #6a6f81;
+  font-size: 16px;
   margin-bottom: 10px;
 }
-.card .end {
+.card__footer {
   display: flex;
   justify-content: center;
   padding: 20px 0px;
   border-top: 1px solid #6a6f81;
   width: 100%;
 }
-.end div {
+.card__footer div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,17 +88,20 @@ body {
   font-size: 12px;
   color: #6a6f81;
 }
-.pattern {
+
+/* patterns */
+.pattern__top {
   position: absolute;
-  width: 60vw;
-  right: -10vw;
-  bottom: -35vw;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-50vw) translateY(-20%);
   z-index: -1;
 }
-.pattern--top {
+.pattern__bottom {
   position: absolute;
-  left: -23vw;
-  top: -30vw;
+  left: 0;
+  top: 0;
+  transform: translateX(50vw) translateY(20%);
   z-index: -1;
 }
 
@@ -102,4 +111,7 @@ body {
   width: 100%;
   font-size: 11px;
   text-align: center;
+}
+.attribution a {
+  color: #b22222;
 }
