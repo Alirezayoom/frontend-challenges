@@ -14,14 +14,14 @@ body {
   overflow: hidden;
 }
 .card {
-  max-width: 350px;
+  max-width: 320px;
+  width: 100%;
   min-height: 360px;
   margin: 0 10px;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
   display: grid;
-  justify-content: center;
   grid-template-rows: 3fr 4fr 2.5fr;
   gap: 0;
 }
@@ -32,8 +32,8 @@ body {
   position: relative;
   text-align: center;
   display: flex;
+
   justify-content: center;
-  width: 100%;
 }
 .card__image {
   position: absolute;
@@ -65,19 +65,20 @@ body {
   margin-bottom: 10px;
 }
 .card__footer {
-  display: flex;
+  display: grid;
   justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, min-content);
+  gap: 40px;
   padding: 20px 0px;
   border-top: 1px solid #6a6f81;
   width: 100%;
 }
-.card__footer div {
+.card__footer > div {
   display: flex;
+  width: min-content;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0 25px;
-  width: 100px;
 }
 .number {
   font-size: 18px;
@@ -113,5 +114,5 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: #b22222;
+  color: #007;
 }
