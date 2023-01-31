@@ -18,27 +18,27 @@
   </head>
   <body>
     <main class="card">
-      <img src="images/illustration-hero.svg" />
-      <div class="around">
-        <div class="content">
-          <p>Order Summary</p>
+      <div class="card__header-image"></div>
+      <div class="card__content">
+        <div class="card__description">
+          <h1>Order Summary</h1>
           <p>
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
         </div>
-        <div class="price">
-          <img src="images/icon-music.svg" alt="music icon" />
-          <div class="price-change">
-            <div>
-              <div class="name">Annual Plan</div>
-              <div class="amount">$59.99/year</div>
-            </div>
-            <div><a href="#">Change</a></div>
+        <!-- card price box -->
+        <div class="card__item">
+          <div><img src="images/icon-music.svg" alt="music icon" /></div>
+          <div>
+            <div class="card__name">Annual Plan</div>
+            <div class="card__price">$59.99/year</div>
           </div>
+          <div class="card__change"><a href="#">Change</a></div>
         </div>
-        <button class="process">Proceed to Payment</button>
-        <button class="cancel">Cancel Order</button>
+        <!-- card buttons -->
+        <button class="card__process-btn">Proceed to Payment</button>
+        <button class="card__cancel-btn">Cancel Order</button>
       </div>
     </main>
     <footer class="attribution">

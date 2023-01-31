@@ -4,118 +4,141 @@
   box-sizing: border-box;
 }
 body {
+  position: relative;
   font-family: "red hat display", sans-serif;
   background-color: #e0e8ff;
-  max-height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card {
-  width: 440px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px #0000004d;
-}
-.card img {
+
+body::after {
+  position: absolute;
+  content: "";
   width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
 }
-.content {
+
+.card {
+  max-width: 28rem;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 0.3rem 1.2rem #0000004d;
+  margin: 0 0.875rem;
+  display: grid;
+  grid-template-rows: 3fr 7fr;
+}
+.card__content {
+  padding: 2.5rem;
+}
+.card__header-image {
+  background-image: url("images/illustration-hero.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.card__description {
   color: #1f2f56;
   display: grid;
   justify-content: center;
   justify-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.8rem;
 }
-.content p:first-child {
-  font-size: 28px;
+.card__description > h1 {
+  font-size: 1.8rem;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 1.4rem;
 }
-.content p:last-child {
+.card__description > p {
   text-align: center;
   line-height: 1.4;
-  font-size: 18px;
-  color: hwb(224 45% 35%);
+  font-size: 1.125rem;
+  color: #7380a6;
 }
-.around {
-  padding: 45px;
-}
-.price {
-  display: flex;
-  justify-items: center;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 10px;
+
+/**************************** card item ****************************/
+.card__item {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+
+  gap: 1rem;
+  align-items: center;
+  padding: 1.2rem;
+  margin-bottom: 1.8rem;
+  border-radius: 0.8rem;
   background-color: #f5f7ff;
 }
-.price > img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+.card__name {
+  color: #1f2f56;
+  font-weight: 900;
+  margin-bottom: 0.3rem;
 }
-.price > div {
-  margin-left: 10px;
+.card__price {
+  color: #7280a7;
+  font-weight: 400;
 }
-.around > button {
+.card__change a {
+  font-weight: 900;
+  font-size: 1rem;
+}
+.card__change a:hover {
+  color: #766cf1;
+}
+
+/**************************** card buttons ****************************/
+.card__content > button {
   width: 100%;
-  padding: 17px;
-  border-radius: 10px;
-  font-size: 14px;
-  letter-spacing: 1.5px;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  font-size: 0.875rem;
+  letter-spacing: 1.5;
   border: none;
   font-weight: 700;
 }
-.around > button:hover {
+.card__content > button:hover {
   cursor: pointer;
 }
-.process {
+.card__process-btn {
   color: #ffffff;
   background-color: #3829e0;
-  box-shadow: 0 10px 20px #0000ff4d;
+  box-shadow: 0 0.875rem 1.4rem #0000ff4d;
 }
-.process:hover {
+.card__process-btn:hover {
   background-color: #766cf1;
 }
-.cancel {
-  margin-top: 20px;
+.card__cancel-btn {
+  margin-top: 1.4rem;
   color: #7280a7;
   background-color: transparent;
   font-weight: 900;
 }
-.cancel:hover {
+.card__cancel-btn:hover {
   color: #1f2f56;
 }
-.name {
-  color: #1f2f56;
-  font-weight: 900;
-  margin-bottom: 5px;
-}
-.amount {
-  color: #7280a7;
-  font-weight: 400;
-}
-.price-change {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-.price-change a {
-  font-weight: 900;
-  font-size: 16px;
-}
-.price-change a:hover {
-  color: #766cf1;
-}
+
+/**************************** footer ****************************/
 .attribution {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-size: 11px;
+  font-size: 0.875rem;
 }
 .attribution a {
   color: #3e52a3;
+}
+
+/**************************** media queries ****************************/
+@media screen and (max-width: 720px) {
+  body::after {
+    background-image: url("images/pattern-background-mobile.svg");
+  }
 }
