@@ -15,43 +15,42 @@ body {
 }
 
 .card {
-  width: 700px;
-  height: 500px;
-  background-color: white;
-  border-radius: 10px;
+  width: 44rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.625rem #0000001a;
   display: grid;
   grid-template-rows: 45% 55%;
 }
 
 /************************ up styles ************************/
-.up {
-  background-color: white;
-  padding: 44px 36px;
+.card__up {
+  background-color: #fff;
+  padding: 2.75rem 2.25rem;
 }
 
 .title {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #2ab2af;
   font-weight: 700;
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
 
 .subtitle {
   color: #c0df34;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .description {
   color: #98a6bd;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 /************************ down styles ************************/
-.down {
+.card__down {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -60,26 +59,26 @@ body {
 
 .down-1 {
   background-color: #2ab2af;
-  padding: 44px 36px;
+  padding: 2.75rem 2.25rem;
 }
 
 .down-title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .price {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: 0.875rem;
+  margin-bottom: 0.875rem;
 }
 
 .per-month {
-  font-size: 16px;
+  font-size: 1rem;
   opacity: 0.7;
   font-weight: 400;
 }
@@ -88,12 +87,12 @@ body {
   border: 0;
   background-color: #c0df34;
   width: 100%;
-  height: 50px;
-  border-radius: 5px;
-  color: white;
-  font-size: 18px;
-  margin-top: 25px;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  height: 3rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 1.125rem;
+  margin-top: 2.25rem;
+  box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .down-1 button:hover {
@@ -101,13 +100,13 @@ body {
 }
 
 .down-2 {
-  background-color: rgba(42, 178, 175, 0.75);
-  padding: 44px 36px;
+  background-color: #2ab2afbf;
+  padding: 2.75rem 2.25rem;
 }
 
 .down-2 ul li {
   list-style: none;
-  margin-bottom: 2px;
+  margin-bottom: 0.225rem;
   opacity: 0.8;
 }
 
@@ -119,7 +118,9 @@ footer {
 }
 
 .attribution {
-  display: flex;
-  align-self: flex-end;
-  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.625rem;
+  text-align: center;
 }
