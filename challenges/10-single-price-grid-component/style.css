@@ -5,6 +5,7 @@
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   display: grid;
   justify-content: center;
@@ -24,10 +25,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/************************ up styles ************************/
+/************************ card header ************************/
 .card__header {
   background-color: #fff;
-  padding: 2.75rem 2.25rem;
   grid-column: 1/-1;
 }
 
@@ -50,11 +50,9 @@ body {
   line-height: 1.6;
 }
 
-/************************ down styles ************************/
-
+/************************ card subscribe ************************/
 .card__subscribe {
   background-color: #2ab2af;
-  padding: 2.75rem 2.25rem;
   color: #e5eff5;
 }
 
@@ -97,10 +95,10 @@ body {
 
 .card__why-us {
   background-color: #2ab2afbf;
-  padding: 2.75rem 2.25rem;
   color: #e5eff5;
 }
 
+/************************ why us ************************/
 .card__why-us--title {
   font-size: 1.125rem;
   font-weight: 700;
@@ -112,6 +110,12 @@ body {
   list-style: none;
   margin-bottom: 0.225rem;
   opacity: 0.8;
+}
+
+.card__header,
+.card__subscribe,
+.card__why-us {
+  padding: 2.75rem 2.25rem;
 }
 
 /************************ footer style ************************/
@@ -127,4 +131,18 @@ footer {
   width: 100%;
   font-size: 0.625rem;
   text-align: center;
+}
+
+/************************ media queries ************************/
+@media screen and (max-width: 44rem) {
+  .card {
+    grid-template-columns: 1fr;
+    max-width: 23.4375rem;
+  }
+
+  .card__header,
+  .card__subscribe,
+  .card__why-us {
+    padding: 2.25rem 1.875rem;
+  }
 }
