@@ -5,9 +5,8 @@
 }
 
 body {
-  height: 99vh;
+  min-height: 100vh;
   display: grid;
-  grid-template-rows: 97% 3%;
   justify-content: center;
   align-items: center;
   background-color: #e5eff5;
@@ -15,60 +14,57 @@ body {
 }
 
 .card {
-  width: 44rem;
+  max-width: 44rem;
+  overflow: hidden;
+  margin: 4rem 0.875rem;
   background-color: #fff;
   border-radius: 0.625rem;
-  overflow: hidden;
   box-shadow: 0 0 0.625rem #0000001a;
   display: grid;
-  grid-template-rows: 45% 55%;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /************************ up styles ************************/
-.card__up {
+.card__header {
   background-color: #fff;
   padding: 2.75rem 2.25rem;
+  grid-column: 1/-1;
 }
 
-.title {
+.card__title {
   font-size: 1.25rem;
   color: #2ab2af;
   font-weight: 700;
   margin-bottom: 1.75rem;
 }
 
-.subtitle {
+.card__subtitle {
   color: #c0df34;
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
-.description {
+.card__description {
   color: #98a6bd;
   font-size: 1rem;
   line-height: 1.6;
 }
 
 /************************ down styles ************************/
-.card__down {
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+.card__subscribe {
+  background-color: #2ab2af;
+  padding: 2.75rem 2.25rem;
   color: #e5eff5;
 }
 
-.down-1 {
-  background-color: #2ab2af;
-  padding: 2.75rem 2.25rem;
-}
-
-.down-title {
+.card__sbuscribe--title {
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
-.price {
+.card__price {
   font-size: 2.25rem;
   font-weight: 700;
   display: flex;
@@ -77,13 +73,13 @@ body {
   margin-bottom: 0.875rem;
 }
 
-.per-month {
+.card__price-text {
   font-size: 1rem;
   opacity: 0.7;
   font-weight: 400;
 }
 
-.down-1 button {
+.card__subscribe button {
   border: 0;
   background-color: #c0df34;
   width: 100%;
@@ -95,16 +91,24 @@ body {
   box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, 0.1);
 }
 
-.down-1 button:hover {
+.card__subscribe button:hover {
   cursor: pointer;
 }
 
-.down-2 {
+.card__why-us {
   background-color: #2ab2afbf;
   padding: 2.75rem 2.25rem;
+  color: #e5eff5;
 }
 
-.down-2 ul li {
+.card__why-us--title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #e5eff5;
+}
+
+.card__why-us ul li {
   list-style: none;
   margin-bottom: 0.225rem;
   opacity: 0.8;
