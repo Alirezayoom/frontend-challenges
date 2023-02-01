@@ -8,36 +8,95 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
   min-height: 100vh;
   font-family: "poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
 }
 
 main {
-  max-width: 1024px;
+  max-width: 60rem;
   width: 100%;
+  padding: 4rem 0;
 }
 
 /********************* header *********************/
 .header {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .header__title {
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: lighter;
+  line-height: 1;
+  margin-bottom: 0.125rem;
+  color: #4c4e61;
 }
 
 .header__subtitle {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 0.625rem;
+  color: #4c4e61;
 }
 
 .header__description {
   font-size: 1rem;
-  color: hsl(234, 12%, 34%);
-  max-width: 500px;
+  color: #a3a5ae;
+  max-width: 36rem;
   margin: 0 auto;
+}
+
+/********************* cards *********************/
+.cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.cards__center {
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.card__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.425rem;
+  color: #4c4e61;
+}
+
+.card__description {
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  color: #a3a5ae;
+}
+
+.card__image {
+  display: flex;
+  justify-content: end;
+  height: 3rem;
+}
+
+.card-1 {
+  border-top: 0.4rem solid #45d3d3;
+}
+.card-2 {
+  border-top: 0.4rem solid #ea5353;
+}
+.card-3 {
+  border-top: 0.4rem solid #fcaf4a;
+}
+.card-4 {
+  border-top: 0.4rem solid #549ef2;
 }
 
 /********************* footer *********************/
@@ -46,4 +105,5 @@ footer {
   width: 100%;
   text-align: center;
   bottom: 0;
+  font-size: 0.625rem;
 }
