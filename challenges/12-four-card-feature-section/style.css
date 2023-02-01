@@ -3,3 +3,24 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1024px;
+  width: 100%;
+  background-color: red;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
