@@ -10,14 +10,37 @@ body {
   justify-content: center;
   justify-items: center;
   min-height: 100vh;
+  font-family: sans-serif;
 }
 
 main {
   max-width: 1024px;
   width: 100%;
-  background-color: red;
 }
 
+/********************* header *********************/
+.header {
+  text-align: center;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.header__subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header__description {
+  font-size: 1rem;
+  color: hsl(234, 12%, 34%);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/********************* footer *********************/
 footer {
   position: absolute;
   width: 100%;
