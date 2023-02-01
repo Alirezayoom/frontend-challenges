@@ -17,7 +17,7 @@ body {
 main {
   max-width: 60rem;
   width: 100%;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 }
 
 /********************* header *********************/
@@ -32,6 +32,7 @@ main {
   line-height: 1;
   margin-bottom: 0.125rem;
   color: #4c4e61;
+  margin-bottom: 0.4rem;
 }
 
 .header__subtitle {
@@ -39,6 +40,7 @@ main {
   font-weight: bold;
   margin-bottom: 0.625rem;
   color: #4c4e61;
+  line-height: 1;
 }
 
 .header__description {
@@ -106,4 +108,22 @@ footer {
   text-align: center;
   bottom: 0;
   font-size: 0.625rem;
+}
+
+/********************* media queries *********************/
+@media screen and (max-width: 60rem) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    max-width: 23.4375rem;
+    margin: 0 auto;
+  }
+  .header__title,
+  .header__subtitle {
+    font-size: 1.625rem;
+  }
+  .header__description {
+    max-width: 25rem;
+  }
 }
