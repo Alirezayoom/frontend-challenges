@@ -30,17 +30,17 @@ main > div {
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 53% 47%;
   margin: 2rem 0;
 }
 
-.ccontent__image {
-  width: 100%;
+.content__image > img {
+  max-width: 100%;
 }
 
 .content__text {
   padding-top: 4rem;
+  padding-left: 4rem;
 }
 
 .content__heading {
