@@ -97,6 +97,11 @@ main > div {
 }
 
 @media screen and (max-width: 1080px) {
+  body {
+    background-image: url("./images/bg-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   main {
     max-width: 375px;
     margin-bottom: 2rem;
