@@ -15,6 +15,7 @@ body {
   justify-content: center;
 }
 
+/******************** main ********************/
 main {
   max-width: 80rem;
   width: 100%;
@@ -30,6 +31,7 @@ main > div {
   padding: 2rem 0;
 }
 
+/******************** content ********************/
 .content {
   display: grid;
   grid-template-columns: 53% 47%;
@@ -73,6 +75,7 @@ main > div {
   color: #fff;
 }
 
+/******************** icons ********************/
 .icons {
   display: grid;
   gap: 1.5rem;
@@ -85,6 +88,7 @@ main > div {
   cursor: pointer;
 }
 
+/******************** footer ********************/
 .attribution {
   font-size: 0.625rem;
   color: #ddd;
@@ -96,6 +100,7 @@ main > div {
   color: #fff;
 }
 
+/******************** media queries ********************/
 @media screen and (max-width: 1080px) {
   body {
     background-image: url("./images/bg-mobile.svg");
