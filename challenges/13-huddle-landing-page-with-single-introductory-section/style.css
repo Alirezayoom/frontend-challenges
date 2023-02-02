@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #674baf;
+  background-image: url("./images/bg-desktop.svg");
+  background-size: contain;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+main {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.logo {
+  padding: 2rem 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.content__text {
+  padding-top: 4rem;
+}
+
+.content__heading {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.content__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.content__register {
+  background-color: #fff;
+  border-radius: 60rem;
+  border: 0;
+  padding: 1rem 3.5rem;
+  color: #674baf;
+  font-size: 1rem;
+  box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.content__register:hover {
+  background-color: #e882e8;
+  cursor: pointer;
+  color: #fff;
+}
+
+.icons {
+  display: grid;
+  grid-column: 1/-1;
+  gap: 1.5rem;
+  grid-template-columns: min-content min-content min-content;
+  justify-content: end;
+}
+
+.icons div:hover {
+  color: #e882e8;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 0.625rem;
+  color: #ddd;
+  width: 100%;
+  text-align: center;
+}
+
+.attribution a {
+  color: #fff;
+}
