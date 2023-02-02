@@ -7,7 +7,7 @@
 body {
   background-color: #674baf;
   background-image: url("./images/bg-desktop.svg");
-  background-size: contain;
+  background-size: cover;
   font-family: "poppins", sans-serif;
   background-repeat: no-repeat;
   background-position: center center;
@@ -20,6 +20,10 @@ main {
   color: #fff;
 }
 
+main > div {
+  margin: 0 1rem;
+}
+
 .logo {
   padding: 2rem 0;
 }
@@ -28,6 +32,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+  margin: 2rem 0;
+}
+
+.ccontent__image {
+  width: 100%;
 }
 
 .content__text {
@@ -64,7 +73,6 @@ main {
 
 .icons {
   display: grid;
-  grid-column: 1/-1;
   gap: 1.5rem;
   grid-template-columns: min-content min-content min-content;
   justify-content: end;
