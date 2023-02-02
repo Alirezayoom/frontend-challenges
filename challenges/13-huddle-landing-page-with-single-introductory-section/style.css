@@ -11,6 +11,8 @@ body {
   font-family: "poppins", sans-serif;
   background-repeat: no-repeat;
   background-position: center center;
+  display: grid;
+  justify-content: center;
 }
 
 main {
@@ -92,4 +94,36 @@ main > div {
 
 .attribution a {
   color: #fff;
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    max-width: 375px;
+    margin-bottom: 2rem;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .content__image {
+    margin: 0 auto;
+  }
+  .content__text {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  .content__heading {
+    font-size: 1.75rem;
+  }
+  .content__register {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  .icons {
+    justify-content: center;
+    margin-top: 4rem;
+  }
 }
