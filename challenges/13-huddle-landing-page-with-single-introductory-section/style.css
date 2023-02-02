@@ -8,7 +8,7 @@ body {
   background-color: #674baf;
   background-image: url("./images/bg-desktop.svg");
   background-size: contain;
-  font-family: sans-serif;
+  font-family: "poppins", sans-serif;
   background-repeat: no-repeat;
   background-position: center center;
 }
