@@ -22,13 +22,14 @@ main {
 /******************* testimonials *******************/
 .testimonials {
   display: grid;
-  gap: 1rem;
+  gap: 1.4rem;
   grid-template-columns: repeat(4, 1fr);
   font-size: 0.8125rem;
 }
 .testimonial {
   border-radius: 0.625rem;
-  padding: 2rem;
+  padding: 1.8rem;
+  box-shadow: 0.625rem 0.625rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .testimonial__header {
