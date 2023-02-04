@@ -12,6 +12,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 main {
@@ -42,6 +43,10 @@ main {
   border: 0.185rem solid #ffffff4d;
   width: 1.8rem;
   height: 1.8rem;
+}
+
+.testimonial__verified {
+  font-size: 0.625rem;
 }
 
 .testimonial-1 {
