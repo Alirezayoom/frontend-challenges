@@ -121,3 +121,15 @@ main {
   text-align: center;
   font-size: 0.825rem;
 }
+
+/******************* media query *******************/
+@media screen and (max-width: 60rem) {
+  .testimonials {
+    display: block;
+    margin: 4rem 1rem;
+    max-width: 23.4375rem;
+  }
+  .testimonial:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
