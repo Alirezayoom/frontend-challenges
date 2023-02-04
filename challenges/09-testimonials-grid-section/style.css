@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  max-width: 1080px;
+  max-width: 67.5rem;
   width: 100%;
 }
 
@@ -55,7 +55,7 @@ main {
 }
 
 .testimonial__image {
-  border-radius: 200px;
+  border-radius: 20rem;
   border: 0.185rem solid #ffffff4d;
   width: 1.8rem;
   height: 1.8rem;
