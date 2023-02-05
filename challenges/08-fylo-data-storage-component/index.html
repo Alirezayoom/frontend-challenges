@@ -9,6 +9,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link href="./style.css" rel="stylesheet" />
     <title>Fylo data storage component</title>
   </head>
   <body>
@@ -20,21 +21,17 @@
             src="images/logo.svg"
             alt="background"
           />
-          <img
-            class="data-storage__icon"
-            src="images/icon-document.svg"
-            alt="background"
-          />
-          <img
-            class="data-storage__icon"
-            src="images/icon-folder.svg"
-            alt="background"
-          />
-          <img
-            class="data-storage__icon"
-            src="images/icon-upload.svg"
-            alt="background"
-          />
+          <div class="data-storage__icons">
+            <div class="data-storage__icon">
+              <img src="images/icon-document.svg" alt="background" />
+            </div>
+            <div class="data-storage__icon">
+              <img src="images/icon-folder.svg" alt="background" />
+            </div>
+            <div class="data-storage__icon">
+              <img src="images/icon-upload.svg" alt="background" />
+            </div>
+          </div>
         </div>
         <div class="data-storage__detail">
           <div class="data-storage__used-space">
