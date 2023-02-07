@@ -155,3 +155,31 @@ body::after {
 .attribution a {
   color: #ff4d97;
 }
+
+@media screen and (max-width: 48rem) {
+  body::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 100vh;
+    background-image: url("./images/bg-mobile.png");
+  }
+  .data-storage {
+    grid-template-columns: 1fr;
+  }
+  .data-storage__detail {
+    padding-bottom: 3rem;
+  }
+  .data-storage__used-space {
+    text-align: center;
+  }
+  .data-storage__left-space {
+    position: absolute;
+    bottom: -6.5rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .data-storage__left-space::after {
+    display: none;
+  }
+}
