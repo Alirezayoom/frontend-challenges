@@ -158,8 +158,6 @@ body::after {
 
 @media screen and (max-width: 48rem) {
   body::after {
-    position: absolute;
-    content: "";
     top: 0;
     height: 100vh;
     background-image: url("./images/bg-mobile.png");
