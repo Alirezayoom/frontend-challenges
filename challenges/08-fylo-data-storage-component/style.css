@@ -12,14 +12,29 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
+  font-family: "raleway", sans-serif;
 }
 
 .data-storage {
   display: grid;
   align-items: end;
   gap: 1.825rem;
-  grid-template-columns: 300px 500px;
-  max-width: 48rem;
+  grid-template-columns: minmax(min-content, 18rem) minmax(min-content, 32rem);
+  margin: 0 1rem;
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  top: 50vh;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  z-index: -1;
 }
 
 .data-storage__images {
@@ -96,13 +111,19 @@ body {
   grid-template-columns: auto auto;
   align-items: center;
   gap: 0.625rem;
-  bottom: 4rem;
+  bottom: 3.5rem;
   background-color: #fff;
   color: #0c122c;
   right: 0;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.625rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.data-storage__left-space-gbleft {
+  font-size: 0.875rem;
+  color: #848794;
 }
 
 .data-storage__left-space::after {
@@ -116,11 +137,6 @@ body {
   background-color: #fff;
 }
 
-.data-storage__left-space-gbleft {
-  font-size: 0.875rem;
-  color: #848794;
-}
-
 .data-storage__capacity {
   display: grid;
   grid-auto-flow: column;
@@ -128,9 +144,14 @@ body {
 }
 
 .attribution {
+  color: #fff;
   position: absolute;
   width: 100%;
   text-align: center;
   bottom: 0;
   font-size: 0.825rem;
+}
+
+.attribution a {
+  color: #ff4d97;
 }
