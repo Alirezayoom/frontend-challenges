@@ -15,8 +15,9 @@ body {
 
 .data-storage {
   display: grid;
+  align-items: end;
   gap: 1.825rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   max-width: 48rem;
 }
 
@@ -49,7 +50,31 @@ body {
 }
 
 .data-storage__detail {
+  display: grid;
+  gap: 20px;
   background-color: #1d2c67;
+  padding: 2rem;
+  border-radius: 0.625rem;
+  color: #fff;
+}
+
+.data-storage__used-space-graphical {
+  width: 100%;
+  height: 1rem;
+  padding: 2px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10rem;
+}
+
+.data-storage__used-space-graphical-inner {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 10rem;
 }
 
 .attribution {
