@@ -11,6 +11,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  font-size: 0.875rem;
 }
 
 .data-storage {
@@ -51,30 +52,30 @@ body {
 
 .data-storage__detail {
   display: grid;
-  gap: 20px;
   background-color: #1d2c67;
   padding: 2rem;
   border-radius: 0.625rem;
   color: #fff;
 }
 
+.data-storage__used-space {
+  margin-bottom: 1rem;
+}
+
 .data-storage__used-space-graphical {
   position: relative;
   width: 100%;
   height: 1rem;
-  padding: 2px;
-  background-color: hsl(229, 57%, 11%);
+  padding: 0.125rem;
+  background-color: #0c122c;
   border-radius: 10rem;
+  margin-bottom: 0.5rem;
 }
 
 .data-storage__used-space-graphical-inner {
   height: 100%;
-  width: 71.5%;
-  background-image: linear-gradient(
-    to right,
-    hsl(6, 100%, 80%),
-    hsl(335, 100%, 65%)
-  );
+  width: 81.5%;
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
   border-radius: 10rem;
   display: grid;
   justify-content: end;
@@ -91,23 +92,39 @@ body {
 
 .data-storage__left-space {
   position: absolute;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 0.625rem;
   bottom: 4rem;
   background-color: #fff;
-  color: #666;
+  color: #0c122c;
   right: 0;
-  padding: 2rem 3rem;
+  padding: 1rem;
   border-radius: 0.625rem;
+  font-size: 2rem;
 }
 
 .data-storage__left-space::after {
   position: absolute;
-  bottom: -1.5rem;
+  bottom: -1rem;
   right: 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
   content: "";
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   background-color: #fff;
+}
+
+.data-storage__left-space-gbleft {
+  font-size: 0.875rem;
+  color: #848794;
+}
+
+.data-storage__capacity {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
 }
 
 .attribution {
