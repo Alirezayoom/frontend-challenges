@@ -10,33 +10,25 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link href="./style.css" rel="stylesheet" />
 
     <title>Clipboard landing page</title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <!-- header -->
     <header>
-      <div>
-        <img src="./images/logo.svg" alt="logo" />
-      </div>
+      <img class="header__logo" src="./images/logo.svg" alt="logo" />
 
-      <h1>A history of everything you copy</h1>
-      <p>
-        Clipboard allows you to track and organize everything you copy.
-        Instantly access your clipboard on all your devices.
-      </p>
-      <div>
-        <button>Download for iOS</button>
-        <button>Download for Mac</button>
+      <div class="header__heading">
+        <h1 class="header__heading-1">A history of everything you copy</h1>
+        <p class="header__description">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
+        </p>
+      </div>
+      <div class="header__buttons">
+        <button class="header__ios-button">Download for iOS</button>
+        <button class="header__mac-button">Download for Mac</button>
       </div>
     </header>
 

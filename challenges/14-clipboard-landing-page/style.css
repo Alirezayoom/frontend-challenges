@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+header {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.header__logo {
+  margin-top: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.header__heading {
+  margin: 32px 0;
+}
+
+.header__heading-1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: hsl(210, 10%, 33%);
+}
+
+.header__description {
+  width: 580px;
+  color: hsl(201, 11%, 66%);
+}
+
+.header__buttons > button {
+  padding: 15px 30px;
+  border-radius: 200px;
+  border: none;
+  color: white;
+}
+
+.header__ios-button {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.header__mac-button {
+  background-color: hsl(233, 100%, 69%);
+}
