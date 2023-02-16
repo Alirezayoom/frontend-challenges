@@ -8,56 +8,66 @@ body {
   font-family: "bai jamjuree", sans-serif;
 }
 
+header,
+main,
+footer {
+  max-width: 90rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/******************** header ********************/
 header {
   background-image: url("./images/bg-header-desktop.png");
   background-repeat: no-repeat;
-
-  max-width: 1440px;
-  width: 100%;
+  margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 40px;
   text-align: center;
 }
 
 .header__logo {
-  margin-top: 100px;
-  width: 80px;
-  height: 80px;
+  margin-top: 7rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .header__heading {
-  margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 .header__heading-1 {
-  font-size: 32px;
-  margin-bottom: 12px;
-  color: hsl(210, 10%, 33%);
+  font-size: 2rem;
+  margin-bottom: 0.825rem;
+  color: #4c545d;
 }
 
 .header__description {
-  width: 580px;
-  color: hsl(201, 11%, 66%);
+  width: 35rem;
+  color: #9fabb2;
 }
 
 .header__buttons {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .header__buttons > button {
-  padding: 15px 30px;
-  border-radius: 200px;
+  padding: 1rem 2rem;
+  border-radius: 16rem;
   border: none;
-  color: white;
+  color: #fff;
 }
 
 .header__ios-button {
-  background-color: hsl(171, 66%, 44%);
+  background-color: #26baa4;
 }
 
 .header__mac-button {
-  background-color: hsl(233, 100%, 69%);
+  background-color: #6173ff;
+}
+
+/******************** main ********************/
+main {
 }
