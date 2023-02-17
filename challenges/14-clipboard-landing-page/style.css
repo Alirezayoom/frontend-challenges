@@ -113,7 +113,7 @@ header {
 .section {
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 4rem;
 }
 
 /* section 1 */
@@ -160,4 +160,38 @@ header {
 
 .section-2__image > img {
   width: inherit;
+}
+
+/* section 3 */
+.section-3__tools {
+  max-width: 67.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.section-3__tool {
+  flex-basis: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.section-3__icon {
+  margin-bottom: 2rem;
+}
+
+.section-3__title {
+  margin-bottom: 1rem;
+  color: var(--header-text-color);
+  font-size: var(--third-header-font-size);
+}
+
+.section-3__description {
+  color: var(--description-text-color);
+  font-size: var(--description-font-size-16);
 }
