@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-text-color: #4c545d;
+  --first-header-font-size: 2rem;
+  --second-header-font-size: 1.5rem;
+  --third-header-font-size: 1.2rem;
+
+  --description-text-color: #9fabb2;
+  --description-font-size: 1rem;
+
+  --button-bg-color-ios: #26baa4;
+  --button-bg-color-mac: #6173ff;
+}
+
 body {
   font-family: "bai jamjuree", sans-serif;
 }
@@ -20,7 +33,8 @@ footer {
 header {
   background-image: url("./images/bg-header-desktop.png");
   background-repeat: no-repeat;
-  margin-bottom: 2.5rem;
+  padding-bottom: 5rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,14 +52,14 @@ header {
 }
 
 .header__heading-1 {
-  font-size: 2rem;
+  font-size: var(--first-header-font-size);
   margin-bottom: 0.825rem;
-  color: #4c545d;
+  color: var(--header-text-color);
 }
 
 .header__description {
   width: 35rem;
-  color: #9fabb2;
+  color: var(--description-text-color);
 }
 
 .header__buttons {
@@ -61,13 +75,15 @@ header {
 }
 
 .header__ios-button {
-  background-color: #26baa4;
+  background-color: var(--button-bg-color-ios);
 }
 
 .header__mac-button {
-  background-color: #6173ff;
+  background-color: var(--button-bg-color-mac);
 }
 
 /******************** main ********************/
 main {
+  padding: 5rem 0;
+  background-color: rgba(255, 0, 0, 0.1);
 }
