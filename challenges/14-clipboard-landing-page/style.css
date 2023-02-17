@@ -6,12 +6,13 @@
 
 :root {
   --header-text-color: #4c545d;
-  --first-header-font-size: 2rem;
-  --second-header-font-size: 1.5rem;
-  --third-header-font-size: 1.2rem;
+  --first-header-font-size: 2.5rem;
+  --second-header-font-size: 2rem;
+  --third-header-font-size: 1.5rem;
 
   --description-text-color: #9fabb2;
-  --description-font-size: 1rem;
+  --description-font-size-16: 1rem;
+  --description-font-size-18: 1.125rem;
 
   --button-bg-color-ios: #26baa4;
   --button-bg-color-mac: #6173ff;
@@ -58,8 +59,11 @@ header {
 }
 
 .header__description {
-  width: 35rem;
+  width: 38rem;
+  margin: 0 auto;
+  line-height: 1.4;
   color: var(--description-text-color);
+  font-size: var(--description-font-size-18);
 }
 
 .header__buttons {
@@ -83,7 +87,31 @@ header {
 }
 
 /******************** main ********************/
-main {
+section {
   padding: 5rem 0;
   background-color: rgba(255, 0, 0, 0.1);
+}
+
+.section__header {
+  text-align: center;
+}
+
+.section__header-heading {
+  font-size: var(--second-header-font-size);
+  color: var(--header-text-color);
+  margin-bottom: 0.825rem;
+}
+
+.section__header-description {
+  font-size: var(--description-font-size-16);
+  line-height: 1.4;
+  color: var(--description-text-color);
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
