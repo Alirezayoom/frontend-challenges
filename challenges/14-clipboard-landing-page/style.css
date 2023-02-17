@@ -87,9 +87,9 @@ header {
 }
 
 /******************** main ********************/
-section {
+.section {
   padding: 5rem 0;
-  background-color: rgba(255, 0, 0, 0.1);
+  /* background-color: rgba(255, 0, 0, 0.1); */
 }
 
 .section__header {
@@ -113,5 +113,40 @@ section {
 .section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3.5rem;
+}
+
+/* section 1 */
+.section-1__content {
+  display: flex;
+  overflow: hidden;
+}
+
+.section-1__image {
+  width: 50%;
+}
+
+.section-1__image > img {
+  width: 100%;
+  transform: translateX(-1.8rem);
+}
+
+.section-1__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 21rem;
+  margin: 0 6rem;
+}
+
+.section-1__item-title {
+  color: var(--header-text-color);
+  font-size: var(--third-header-font-size);
+  margin-bottom: 0.625rem;
+}
+
+.section-1__item-description {
+  color: var(--description-text-color);
+  font-size: var(--description-font-size-16);
 }
