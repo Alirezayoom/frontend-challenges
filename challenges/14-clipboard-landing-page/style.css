@@ -150,3 +150,14 @@ header {
   color: var(--description-text-color);
   font-size: var(--description-font-size-16);
 }
+
+/* section 2 */
+.section-2__image {
+  margin: 0 auto;
+  max-width: max-content;
+  width: 100%;
+}
+
+.section-2__image > img {
+  width: inherit;
+}
