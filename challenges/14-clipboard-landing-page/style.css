@@ -30,6 +30,28 @@ footer {
   margin: 0 auto;
 }
 
+/******************** global ********************/
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons > button {
+  padding: 0.825rem 2rem;
+  border-radius: 16rem;
+  border: none;
+  color: #fff;
+}
+
+.ios-button {
+  background-color: var(--button-bg-color-ios);
+}
+
+.mac-button {
+  background-color: var(--button-bg-color-mac);
+}
+
 /******************** header ********************/
 header {
   background-image: url("./images/bg-header-desktop.png");
@@ -64,26 +86,6 @@ header {
   line-height: 1.4;
   color: var(--description-text-color);
   font-size: var(--description-font-size-18);
-}
-
-.header__buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.header__buttons > button {
-  padding: 1rem 2rem;
-  border-radius: 16rem;
-  border: none;
-  color: #fff;
-}
-
-.header__ios-button {
-  background-color: var(--button-bg-color-ios);
-}
-
-.header__mac-button {
-  background-color: var(--button-bg-color-mac);
 }
 
 /******************** main ********************/
@@ -206,3 +208,6 @@ header {
 }
 
 /* section 5 */
+.section-5 {
+  gap: 3rem;
+}
