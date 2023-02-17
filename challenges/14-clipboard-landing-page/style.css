@@ -211,3 +211,58 @@ header {
 .section-5 {
   gap: 3rem;
 }
+
+/******************** footer ********************/
+footer {
+  background-color: rgba(159, 171, 178, 0.12);
+  position: relative;
+}
+
+.footer__container {
+  max-width: 67.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  gap: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-media {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 3rem;
+}
+
+.footer__logo > img {
+  width: inherit;
+}
+
+.footer__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  flex-basis: calc(100% / 3);
+  margin: 0.625rem 0;
+}
+
+.footer__item > a {
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+
+.codedby {
+  font-size: 0.825rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
