@@ -9,11 +9,16 @@
     />
     <title>QR code component</title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
       body {
+        position: relative;
         font-family: outfit, sans-serif;
         background-color: #d5e1ef;
-        height: 97vh;
-        width: 97vw;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -44,9 +49,18 @@
         font-size: 1.25rem;
         font-weight: bold;
         color: #222;
+        margin-bottom: 0.825rem;
       }
       .description {
         color: #888;
+      }
+      footer {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        font-size: 0.825rem;
+        text-align: center;
       }
     </style>
   </head>
@@ -68,5 +82,11 @@
         </div>
       </div>
     </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Alirezayoom">Alireza</a>.
+    </footer>
   </body>
 </html>
