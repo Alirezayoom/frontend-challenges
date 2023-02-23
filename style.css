@@ -46,8 +46,8 @@ main > h1 {
 /* card style */
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 300px;
+
+  height: 510px;
   width: 500px;
   border-radius: 20px;
   overflow: hidden;
@@ -63,7 +63,7 @@ main > h1 {
 
 .image {
   background-size: cover;
-  height: 100%;
+
   background-position: center center;
   align-items: center;
 }
@@ -89,11 +89,13 @@ main > h1 {
   color: #fff;
   font-size: 14px;
   height: 70%;
+  margin-bottom: 10px;
 }
 
 .right .number {
   font-size: 20px;
   color: #eee;
+  margin-bottom: 10px;
 }
 
 .right button {
