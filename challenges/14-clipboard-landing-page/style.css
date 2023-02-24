@@ -55,6 +55,7 @@ footer {
 /******************** header ********************/
 header {
   background-image: url("./images/bg-header-desktop.png");
+  background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 5rem;
 
