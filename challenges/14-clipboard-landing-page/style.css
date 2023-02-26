@@ -338,6 +338,20 @@ footer {
   .logos {
     max-width: 28rem;
   }
+  .footer__container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer__social-media {
+    margin: 0 auto 2rem;
+  }
+  .footer__items {
+    justify-content: center;
+    gap: 0 2rem;
+  }
+  .footer__item {
+    flex-basis: auto;
+  }
 }
 
 @media screen and (max-width: 26.25rem) {
@@ -353,5 +367,9 @@ footer {
   }
   .logos {
     flex-direction: column;
+  }
+  .footer__items {
+    flex-direction: column;
+    text-align: center;
   }
 }
