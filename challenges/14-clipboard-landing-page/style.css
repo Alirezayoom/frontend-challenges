@@ -46,10 +46,12 @@ footer {
 
 .ios-button {
   background-color: var(--button-bg-color-ios);
+  box-shadow: 0 3px 0 0 #1d907f;
 }
 
 .mac-button {
   background-color: var(--button-bg-color-mac);
+  box-shadow: 0 3px 0 0 #3c4fdd;
 }
 
 /******************** header ********************/
