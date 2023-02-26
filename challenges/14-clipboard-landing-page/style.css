@@ -55,23 +55,23 @@ footer {
 
 .ios-button {
   background-color: var(--button-bg-color-ios);
-  box-shadow: 0 3px 0 0 #1d907f, 0 10px 30px 0 #1d907f80;
+  box-shadow: 0 0.1875rem 0 0 #1d907f, 0 0.625rem 2rem 0 #1d907f80;
 }
 
 .mac-button {
   background-color: var(--button-bg-color-mac);
-  box-shadow: 0 3px 0 0 #3c4fdd, 0 10px 30px 0 #3c4fdd80;
+  box-shadow: 0 0.1875rem 0 0 #3c4fdd, 0 0.625rem 2rem 0 #3c4fdd80;
 }
 
 .ios-button:hover {
   background-color: #26baa4dd;
-  box-shadow: 0 3px 0 0 #1d907fbb, 0 10px 30px 0 #1d907faa;
+  box-shadow: 0 0.1875rem 0 0 #1d907fbb, 0 0.625rem 2rem 0 #1d907faa;
   transition: all 0.2s;
 }
 
 .mac-button:hover {
   background-color: #6173ff;
-  box-shadow: 0 3px 0 0 #3c4fddbb, 0 10px 30px 0 #3c4fddaa;
+  box-shadow: 0 0.1875rem 0 0 #3c4fddbb, 0 0.625rem 2rem 0 #3c4fddaa;
   transition: all 0.2s;
 }
 
