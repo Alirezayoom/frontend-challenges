@@ -315,6 +315,12 @@ footer {
   .section-2__image {
     max-width: 32rem;
   }
+  .logos {
+    max-width: 45rem;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 48rem) {
@@ -329,6 +335,9 @@ footer {
     gap: 4rem;
     max-width: 24rem;
   }
+  .logos {
+    max-width: 28rem;
+  }
 }
 
 @media screen and (max-width: 26.25rem) {
@@ -341,5 +350,8 @@ footer {
   .buttons > button {
     max-width: 18rem;
     width: 100%;
+  }
+  .logos {
+    flex-direction: column;
   }
 }
