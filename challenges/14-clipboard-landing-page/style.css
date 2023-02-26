@@ -58,6 +58,16 @@ footer {
   box-shadow: 0 3px 0 0 #3c4fdd, 0 10px 30px 0 #3c4fdd80;
 }
 
+.ios-button:hover {
+  background-color: #26baa4dd;
+  box-shadow: 0 3px 0 0 #1d907fbb, 0 10px 30px 0 #1d907faa;
+}
+
+.mac-button:hover {
+  background-color: #6173ff;
+  box-shadow: 0 3px 0 0 #3c4fddbb, 0 10px 30px 0 #3c4fddaa;
+}
+
 /******************** header ********************/
 header {
   background-image: url("./images/bg-header-desktop.png");
