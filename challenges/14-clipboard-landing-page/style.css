@@ -292,6 +292,28 @@ footer {
   bottom: 0;
 }
 
+@media screen and (max-width: 64rem) {
+  .section__header-heading {
+    font-size: var(--text-2xl);
+  }
+  .section-1__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .section-1__image {
+    max-width: 32rem;
+    width: 100%;
+  }
+  .section-1__image > img {
+    transform: translateX(0);
+  }
+  .section-1__items {
+    text-align: center;
+    margin: 0 1rem;
+  }
+}
+
 @media screen and (max-width: 48rem) {
   .header__heading-1 {
     font-size: var(--text-3xl);
