@@ -324,6 +324,11 @@ footer {
   .header__description {
     font-size: var(--text-base);
   }
+  .section-3__tools {
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 24rem;
+  }
 }
 
 @media screen and (max-width: 26.25rem) {
