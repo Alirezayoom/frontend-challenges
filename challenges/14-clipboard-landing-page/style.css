@@ -312,6 +312,9 @@ footer {
     text-align: center;
     margin: 0 1rem;
   }
+  .section-2__image {
+    max-width: 32rem;
+  }
 }
 
 @media screen and (max-width: 48rem) {
