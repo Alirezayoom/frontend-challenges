@@ -44,6 +44,10 @@ footer {
   color: #fff;
 }
 
+.buttons > button:hover {
+  cursor: pointer;
+}
+
 .ios-button {
   background-color: var(--button-bg-color-ios);
   box-shadow: 0 3px 0 0 #1d907f, 0 10px 30px 0 #1d907f80;
