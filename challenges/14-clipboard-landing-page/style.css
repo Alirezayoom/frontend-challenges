@@ -32,6 +32,7 @@ footer {
   max-width: 90rem;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /******************** global ********************/
@@ -289,4 +290,26 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
+}
+
+@media screen and (max-width: 48rem) {
+  .header__heading-1 {
+    font-size: var(--text-3xl);
+  }
+  .header__description {
+    font-size: var(--text-base);
+  }
+}
+
+@media screen and (max-width: 26.25rem) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  .buttons > button {
+    max-width: 18rem;
+    width: 100%;
+  }
 }
