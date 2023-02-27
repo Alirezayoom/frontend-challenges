@@ -1,3 +1,21 @@
+:root {
+  --text-2xs: 0.625rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+
+  --color-primary: hsl(192, 100%, 9%);
+  --color-secondary: hsl(322, 100%, 66%);
+  --color-grayish-blue: hsl(208, 11%, 55%);
+  --color-pale-cyan: hsl(193, 100%, 96%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +24,32 @@
 
 body {
   background-color: skyblue;
+}
+
+header {
+  background-color: var(--color-pale-cyan);
+  background-image: url("./images/bg-hero-desktop.svg");
+}
+
+nav {
+  max-width: 90rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+nav button {
+  padding: 1rem 4rem;
+  border: 0;
+  background-color: #fff;
+  border-radius: 90rem;
+  font-size: var(--text-md);
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+header > div {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
