@@ -22,8 +22,17 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: poppins, sans-serif;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "open sans", sans-serif;
   background-color: skyblue;
 }
 
@@ -37,7 +46,7 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 
 nav button {
@@ -52,7 +61,7 @@ nav button {
 header > div {
   max-width: 90rem;
   margin: 0 auto;
-  padding: 1rem 1rem 2rem;
+  padding: 1rem 2rem 2rem;
 
   display: flex;
 }
@@ -68,11 +77,13 @@ header > div > div:first-child {
 header > div > div:first-child > h1 {
   font-size: var(--text-4xl);
   margin-bottom: 2rem;
+  margin-right: 8rem;
 }
 
 header > div > div:first-child > p {
   font-size: 1rem;
   margin-bottom: 1.8rem;
+  margin-right: 4rem;
 }
 
 header > div > div:first-child > button {
