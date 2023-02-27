@@ -171,4 +171,45 @@ main > div:last-child > button {
 /*************************** main ***************************/
 footer {
   background-color: hsl(192, 100%, 9%);
+  color: #fff;
+}
+
+footer > div {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+footer > div:first-child {
+  padding-top: 8rem;
+}
+
+footer > div:first-child > div:nth-child(2) {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > div:first-child > div:nth-child(2) > div:first-child {
+  flex-basis: 40%;
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+footer > div:first-child > div:nth-child(2) > div:first-child > div {
+  display: flex;
+  gap: 1rem;
+}
+
+footer > div:first-child > div:nth-child(2) > div:nth-child(2),
+footer > div:first-child > div:nth-child(2) > div:nth-child(3d) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer > div:first-child > div:first-child > img {
+  filter: contrast(0);
 }
