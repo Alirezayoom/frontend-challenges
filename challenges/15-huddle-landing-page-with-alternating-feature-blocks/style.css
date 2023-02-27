@@ -23,6 +23,7 @@
 }
 
 body {
+  font-family: sans-serif;
   background-color: skyblue;
 }
 
@@ -43,13 +44,50 @@ nav button {
   padding: 1rem 4rem;
   border: 0;
   background-color: #fff;
-  border-radius: 90rem;
   font-size: var(--text-md);
-  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 90rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.1);
 }
 
 header > div {
   max-width: 90rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 1rem 1rem 2rem;
+
+  display: flex;
+}
+
+header > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex-basis: 45%;
+}
+
+header > div > div:first-child > h1 {
+  font-size: var(--text-4xl);
+  margin-bottom: 2rem;
+}
+
+header > div > div:first-child > p {
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+header > div > div:first-child > button {
+  padding: 1rem 4rem;
+  border: 0;
+  background-color: var(--color-secondary);
+  border-radius: 90rem;
+  font-size: var(--text-md);
+  color: #fff;
+}
+
+header > div > div:last-child {
+  flex-basis: 55%;
+}
+
+header > div > div:last-child > img {
+  width: 100%;
 }
