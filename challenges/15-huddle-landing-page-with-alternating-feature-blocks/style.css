@@ -33,8 +33,9 @@ h6 {
 
 body {
   font-family: "open sans", sans-serif;
-  background-color: skyblue;
 }
+
+/*************************** header ***************************/
 
 header {
   background-color: var(--color-pale-cyan);
@@ -100,5 +101,37 @@ header > div > div:last-child {
 }
 
 header > div > div:last-child > img {
+  width: 100%;
+}
+
+/*************************** main ***************************/
+
+main {
+  max-width: 90rem;
+  margin: 4rem auto;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main > div:not(:last-child) {
+  display: flex;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+main > div:nth-child(odd) > div:first-child,
+main > div:nth-child(even) > div:last-child {
+  flex-basis: 60%;
+}
+
+main > div:nth-child(odd) > div:last-child,
+main > div:nth-child(even) > div:first-child {
+  flex-basis: 40%;
+}
+
+main > div:nth-child(odd) > div:last-child > img,
+main > div:nth-child(even) > div:first-child > img {
   width: 100%;
 }
