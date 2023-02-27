@@ -109,7 +109,7 @@ header > div > div:last-child > img {
 main {
   max-width: 90rem;
   margin: 4rem auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
 
   display: flex;
   flex-direction: column;
@@ -118,12 +118,21 @@ main {
 
 main > div:not(:last-child) {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  padding-left: 8rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  font-size: var(--text-3xl);
+  margin-bottom: 0.625rem;
 }
 
 main > div:nth-child(odd) > div:first-child,
 main > div:nth-child(even) > div:last-child {
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 
 main > div:nth-child(odd) > div:last-child,
