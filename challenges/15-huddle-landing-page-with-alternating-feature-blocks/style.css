@@ -320,3 +320,24 @@ footer > p > a {
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 48rem) {
+  nav > div:first-child {
+    max-width: 8rem;
+  }
+  nav {
+    padding: 2rem 1rem;
+  }
+  nav button {
+    padding: 0.5rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  nav button {
+    padding: 0.4rem 2rem;
+  }
+  nav > div:first-child {
+    max-width: 6rem;
+  }
+}
