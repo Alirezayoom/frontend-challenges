@@ -97,6 +97,12 @@ header > div > div:first-child > button {
   color: #fff;
 }
 
+header > div > div:first-child > button:hover {
+  background-color: #ff52bfcc;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
 header > div > div:last-child {
   flex-basis: 55%;
 }
