@@ -212,6 +212,12 @@ footer > div:first-child > div:nth-child(2) > div:nth-child(3) {
   font-size: var(--text-md);
 }
 
+footer > div:first-child > div:nth-child(2) > div:nth-child(2) a,
+footer > div:first-child > div:nth-child(2) > div:nth-child(3) a {
+  text-decoration: none;
+  color: hsl(193, 100%, 96%);
+}
+
 footer > div:first-child > div:nth-child(2) > div:last-child {
   display: flex;
   align-items: start;
