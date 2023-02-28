@@ -391,6 +391,9 @@ footer > p > a {
 }
 
 @media screen and (max-width: 32rem) {
+  header {
+    background-image: url("./images/bg-hero-mobile.svg");
+  }
   nav button {
     padding: 0.4rem 2rem;
   }
