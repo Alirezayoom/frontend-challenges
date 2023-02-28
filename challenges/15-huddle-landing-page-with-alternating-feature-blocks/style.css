@@ -218,6 +218,11 @@ footer > div:first-child > div:nth-child(2) > div:nth-child(3) a {
   color: #ebfbff;
 }
 
+footer > div:first-child > div:nth-child(2) > div:nth-child(2) a:hover,
+footer > div:first-child > div:nth-child(2) > div:nth-child(3) a:hover {
+  text-decoration: underline;
+}
+
 footer > div:first-child > div:nth-child(2) > div:last-child {
   display: flex;
   align-items: start;
