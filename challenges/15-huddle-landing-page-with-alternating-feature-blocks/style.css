@@ -42,6 +42,7 @@ body {
 header {
   background-color: var(--color-pale-cyan);
   background-image: url("./images/bg-hero-desktop.svg");
+
   color: var(--color-primary);
 }
 
@@ -381,6 +382,12 @@ footer > p > a {
   main > div:nth-child(odd) {
     flex-direction: column-reverse;
   }
+  main h2 {
+    font-size: var(--text-xl);
+  }
+  main > div:last-child {
+    padding: 2rem 1rem;
+  }
 }
 
 @media screen and (max-width: 32rem) {
@@ -399,8 +406,8 @@ footer > p > a {
   main > div:not(:last-child) {
     padding: 4rem 2rem;
   }
-  main > h2 {
-    font-size: var(--text-xl);
+  main h2 {
+    font-size: var(--text-lg);
   }
   footer > div {
     padding: 0 1rem;
