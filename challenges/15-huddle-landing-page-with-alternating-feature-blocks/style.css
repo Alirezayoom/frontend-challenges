@@ -29,6 +29,7 @@ h4,
 h5,
 h6 {
   font-family: poppins, sans-serif;
+  color: var(--color-primary);
 }
 
 body {
@@ -41,6 +42,7 @@ body {
 header {
   background-color: var(--color-pale-cyan);
   background-image: url("./images/bg-hero-desktop.svg");
+  color: var(--color-primary);
 }
 
 nav {
@@ -143,6 +145,10 @@ main > div:not(:last-child) {
 main h2 {
   font-size: var(--text-2xl);
   margin-bottom: 0.625rem;
+}
+
+main p {
+  color: var(--color-grayish-blue);
 }
 
 main > div:nth-child(odd) > div:first-child,
