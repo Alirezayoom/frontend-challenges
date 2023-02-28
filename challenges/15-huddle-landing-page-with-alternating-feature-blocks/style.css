@@ -169,6 +169,12 @@ main > div:last-child > button {
   margin-top: 1rem;
 }
 
+main > div:last-child > button:hover {
+  background-color: #ff52bfcc;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
 /*************************** main ***************************/
 footer {
   background-color: #00252e;
