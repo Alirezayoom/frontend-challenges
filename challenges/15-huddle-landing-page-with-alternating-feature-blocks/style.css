@@ -233,6 +233,10 @@ footer > div:first-child > div:nth-child(2) > div:last-child > div > a {
   place-content: center;
 }
 
+footer > div > div:last-child {
+  text-align: right;
+}
+
 footer svg {
   color: hsl(193, 100%, 96%);
 }
