@@ -88,7 +88,7 @@ header > div > div:first-child {
 header > div > div:first-child > h1 {
   font-size: var(--text-4xl);
   margin-bottom: 2rem;
-  margin-right: 8rem;
+  max-width: 25rem;
 }
 
 header > div > div:first-child > p {
@@ -194,7 +194,7 @@ main > div:last-child > button:hover {
   transition: all 0.1s;
 }
 
-/*************************** main ***************************/
+/*************************** footer ***************************/
 footer {
   background-color: #00252e;
   color: #fff;
@@ -289,4 +289,9 @@ footer > p {
 
 footer > p > a {
   color: #fff;
+}
+
+/*************************** responsive ***************************/
+
+@media screen and (max-width: 64rem) {
 }
