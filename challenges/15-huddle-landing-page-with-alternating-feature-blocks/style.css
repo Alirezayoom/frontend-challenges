@@ -225,7 +225,7 @@ footer > div:first-child > div:nth-child(2) > div:last-child {
 }
 
 footer > div:first-child > div:nth-child(2) > div:last-child > div > a {
-  border: 1px solid hsl(193, 100%, 96%);
+  border: 0.0625rem solid hsl(193, 100%, 96%);
   width: 2rem;
   height: 2rem;
   border-radius: 20rem;
