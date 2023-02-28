@@ -269,8 +269,9 @@ footer > div:first-child > div:nth-child(2) > div:last-child > div > a {
   width: 2rem;
   height: 2rem;
   border-radius: 20rem;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.2s;
 }
 
@@ -345,7 +346,6 @@ footer > p > a {
   }
   header > div > div:first-child > h1 {
     font-size: var(--text-xl);
-
     margin-top: 2rem;
     max-width: 28rem;
     line-height: 1.3;
