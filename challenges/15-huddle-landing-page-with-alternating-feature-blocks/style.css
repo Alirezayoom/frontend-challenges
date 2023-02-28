@@ -55,6 +55,7 @@ nav button {
   padding: 1rem 4rem;
   border: 0;
   background-color: #fff;
+  font-weight: bolder;
   font-size: var(--text-md);
   border-radius: 90rem;
   box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.1);
