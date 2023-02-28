@@ -329,6 +329,30 @@ footer > p > a {
   main > div:not(:last-child) {
     padding-left: 2rem;
   }
+
+  footer > div:first-child > div:nth-child(2) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer > div:first-child > div:last-child {
+    text-align: center;
+  }
+
+  footer > div:first-child > div:nth-child(2) > div:first-child {
+    max-width: 100%;
+  }
+
+  footer > div:first-child > div:nth-child(2) > div:last-child {
+    margin: 2rem auto 0;
+  }
+
+  footer > div:first-child > div:first-child {
+    max-width: 10rem;
+  }
+  footer > div:first-child > div:first-child > img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 48rem) {
@@ -377,5 +401,8 @@ footer > p > a {
   }
   main > h2 {
     font-size: var(--text-xl);
+  }
+  footer > div {
+    padding: 0 1rem;
   }
 }
