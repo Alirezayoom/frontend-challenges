@@ -49,16 +49,24 @@ nav {
   max-width: 90rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   padding: 2rem 2rem;
 }
 
+nav > div:first-child {
+  max-width: 10rem;
+}
+
+nav > div:first-child > img {
+  width: 100%;
+}
+
 nav button {
-  padding: 1rem 4rem;
+  padding: 0.625rem 3rem;
   border: 0;
   background-color: #fff;
   font-weight: bolder;
-  font-size: var(--text-md);
   border-radius: 90rem;
   box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.1);
 }
@@ -99,11 +107,10 @@ header > div > div:first-child > p {
 }
 
 header > div > div:first-child > button {
-  padding: 1rem 4rem;
+  padding: 0.625rem 2rem;
   border: 0;
   background-color: var(--color-secondary);
   border-radius: 90rem;
-  font-size: var(--text-md);
   color: #fff;
 }
 
@@ -182,11 +189,10 @@ main > div:last-child {
 }
 
 main > div:last-child > button {
-  padding: 1rem 4rem;
+  padding: 0.625rem 2rem;
   border: 0;
   background-color: var(--color-secondary);
   border-radius: 90rem;
-  font-size: var(--text-md);
   color: #fff;
   margin-top: 1rem;
 }
