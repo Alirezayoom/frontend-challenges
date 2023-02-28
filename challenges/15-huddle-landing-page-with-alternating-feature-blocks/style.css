@@ -226,6 +226,7 @@ footer > div:first-child > div:nth-child(2) > div:last-child {
 
 footer > div:first-child > div:nth-child(2) > div:last-child > div > a {
   border: 0.0625rem solid #ebfbff;
+  color: #ebfbff;
   width: 2rem;
   height: 2rem;
   border-radius: 20rem;
@@ -233,12 +234,13 @@ footer > div:first-child > div:nth-child(2) > div:last-child > div > a {
   place-content: center;
 }
 
-footer > div > div:last-child {
-  text-align: right;
+footer > div:first-child > div:nth-child(2) > div:last-child > div > a:hover {
+  border-color: #ff52bf;
+  color: #ff52bf;
 }
 
-footer svg {
-  color: #ebfbff;
+footer > div > div:last-child {
+  text-align: right;
 }
 
 footer > div:first-child > div:first-child > img {
