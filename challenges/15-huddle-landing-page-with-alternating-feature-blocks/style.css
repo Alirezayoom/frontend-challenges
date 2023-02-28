@@ -10,10 +10,10 @@
   --text-3xl: 2rem;
   --text-4xl: 2.5rem;
 
-  --color-primary: hsl(192, 100%, 9%);
-  --color-secondary: hsl(322, 100%, 66%);
-  --color-grayish-blue: hsl(208, 11%, 55%);
-  --color-pale-cyan: hsl(193, 100%, 96%);
+  --color-primary: #00252e;
+  --color-secondary: #ff52bf;
+  --color-grayish-blue: #808d99;
+  --color-pale-cyan: #ebfbff;
 }
 
 * {
@@ -171,7 +171,7 @@ main > div:last-child > button {
 
 /*************************** main ***************************/
 footer {
-  background-color: hsl(192, 100%, 9%);
+  background-color: #00252e;
   color: #fff;
 }
 
@@ -215,7 +215,7 @@ footer > div:first-child > div:nth-child(2) > div:nth-child(3) {
 footer > div:first-child > div:nth-child(2) > div:nth-child(2) a,
 footer > div:first-child > div:nth-child(2) > div:nth-child(3) a {
   text-decoration: none;
-  color: hsl(193, 100%, 96%);
+  color: #ebfbff;
 }
 
 footer > div:first-child > div:nth-child(2) > div:last-child {
@@ -225,7 +225,7 @@ footer > div:first-child > div:nth-child(2) > div:last-child {
 }
 
 footer > div:first-child > div:nth-child(2) > div:last-child > div > a {
-  border: 0.0625rem solid hsl(193, 100%, 96%);
+  border: 0.0625rem solid #ebfbff;
   width: 2rem;
   height: 2rem;
   border-radius: 20rem;
@@ -238,7 +238,7 @@ footer > div > div:last-child {
 }
 
 footer svg {
-  color: hsl(193, 100%, 96%);
+  color: #ebfbff;
 }
 
 footer > div:first-child > div:first-child > img {
