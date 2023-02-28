@@ -212,7 +212,7 @@ footer > div:first-child > div:nth-child(2) > div:nth-child(3d) {
 }
 
 footer > div:first-child > div:first-child > img {
-  filter: contrast(0);
+  filter: brightness(0) invert(1);
 }
 
 footer > p {
