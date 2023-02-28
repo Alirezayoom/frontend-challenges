@@ -115,6 +115,8 @@ header > div > div:first-child > button:hover {
 
 header > div > div:last-child {
   flex-basis: 55%;
+  display: flex;
+  align-items: center;
 }
 
 header > div > div:last-child > img {
@@ -290,4 +292,25 @@ footer > p {
 
 footer > p > a {
   color: #fff;
+}
+
+/*************************** responsive ***************************/
+
+@media screen and (max-width: 60rem) {
+  main > div:not(:last-child) {
+    padding-left: 4rem;
+  }
+  header > div {
+    max-width: 40rem;
+
+    flex-direction: column;
+    gap: 4rem;
+  }
+  header > div > div:first-child {
+    align-items: center;
+    text-align: center;
+  }
+  header > div > div:first-child > p {
+    margin-right: 0;
+  }
 }
