@@ -415,4 +415,7 @@ footer > p > a {
   footer > div {
     padding: 0 1rem;
   }
+  footer > div:first-child > div:last-child {
+    padding-bottom: 4rem;
+  }
 }
