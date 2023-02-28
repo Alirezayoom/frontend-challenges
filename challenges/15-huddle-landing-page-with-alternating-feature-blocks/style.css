@@ -61,6 +61,12 @@ nav button {
   box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.1);
 }
 
+nav button:hover {
+  color: #00252ecc;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
 header > div {
   max-width: 90rem;
   margin: 0 auto;
