@@ -331,6 +331,9 @@ footer > p > a {
   nav button {
     padding: 0.5rem 2.5rem;
   }
+  header > div > div:first-child > h1 {
+    font-size: var(--text-3xl);
+  }
 }
 
 @media screen and (max-width: 32rem) {
@@ -339,5 +342,12 @@ footer > p > a {
   }
   nav > div:first-child {
     max-width: 6rem;
+  }
+  header > div > div:first-child > h1 {
+    font-size: var(--text-xl);
+
+    margin-top: 2rem;
+    max-width: 28rem;
+    line-height: 1.3;
   }
 }
