@@ -232,6 +232,7 @@ footer > div:first-child > div:nth-child(2) > div:last-child > div > a {
   border-radius: 20rem;
   display: grid;
   place-content: center;
+  transition: all 0.2s;
 }
 
 footer > div:first-child > div:nth-child(2) > div:last-child > div > a:hover {
