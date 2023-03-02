@@ -21,3 +21,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 500px;
+  height: 300px;
+  background-color: var(--color-light-red);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
