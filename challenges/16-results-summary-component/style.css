@@ -130,6 +130,15 @@ main {
   border-radius: 0.625rem;
 }
 
+.summary__items > li > div {
+  color: rgba(48, 59, 90, 0.5);
+}
+
+.summary__items .number {
+  color: var(--color-dark-gray-blue);
+  font-weight: bold;
+}
+
 .summary__items > li > img {
   margin-right: 0.4rem;
 }
