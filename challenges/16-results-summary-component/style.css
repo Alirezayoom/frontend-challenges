@@ -46,6 +46,13 @@ main {
 
 .result {
   background-color: var(--color-obalt-blue);
+  display: grid;
+  align-content: start;
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+
+.result__title {
 }
 
 footer {
