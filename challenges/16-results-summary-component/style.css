@@ -46,7 +46,11 @@ main {
 }
 
 .result {
-  background-color: var(--color-obalt-blue);
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
   display: grid;
   align-content: start;
   text-align: center;
@@ -59,7 +63,11 @@ main {
 }
 
 .result__percentage {
-  background-image: linear-gradient(to bottom, red, green);
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
   width: 10rem;
   height: 10rem;
   border-radius: 90rem;
