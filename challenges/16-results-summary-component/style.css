@@ -20,6 +20,11 @@
   --color-dark-gray-blue: hsl(224, 30%, 27%);
 }
 
+@font-face {
+  font-family: "hanken";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -32,7 +37,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+  font-family: "hanken", sans-serif;
 }
 
 main {
@@ -110,9 +115,6 @@ main {
 }
 
 /*************** result ***************/
-
-.summary {
-}
 
 .summary__title {
   font-size: var(--text-lg);
