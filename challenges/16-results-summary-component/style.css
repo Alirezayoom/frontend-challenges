@@ -44,7 +44,7 @@ main {
   grid-template-columns: 1fr 1fr;
   border-radius: 1.75rem;
   overflow: hidden;
-  background-color: var(--color-light-red);
+  box-shadow: 1rem 1rem 2.5rem 0 rgba(200, 199, 255, 0.5);
 }
 
 .result,
@@ -127,8 +127,47 @@ main {
 .summary__items > li {
   display: flex;
   padding: 0.8rem 0.625rem;
-  background-color: white;
   border-radius: 0.625rem;
+}
+
+.summary__items > li > img {
+  margin-right: 0.4rem;
+}
+
+.summary__items > li > div {
+  margin-left: auto;
+}
+
+.summary__reaction {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+
+.summary__reaction > p {
+  color: var(--color-light-red);
+}
+
+.summary__memory {
+  background-color: rgba(255, 176, 31, 0.1);
+}
+
+.summary__memory > p {
+  color: var(--color-orangey-yellow);
+}
+
+.summary__verbal {
+  background-color: rgba(0, 189, 145, 0.1);
+}
+
+.summary__verbal > p {
+  color: var(--color-green-teal);
+}
+
+.summary__visual {
+  background-color: rgba(17, 37, 212, 0.1);
+}
+
+.summary__visual > p {
+  color: var(--color-obalt-blue);
 }
 
 /*************** result ***************/
