@@ -36,7 +36,7 @@ body {
 }
 
 main {
-  width: 36rem;
+  width: 40rem;
   background-color: var(--color-light-red);
 }
 
@@ -54,7 +54,7 @@ main {
   display: grid;
   align-content: start;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 2rem;
   gap: 1.5rem;
 }
 
@@ -83,6 +83,16 @@ main {
 
 .result__percentage p:last-child {
   font-size: 1rem;
+  color: var(--color-light-lavender);
+}
+
+.result__result {
+  font-size: 1.5rem;
+  color: var(--color-pale-blue);
+  margin-bottom: 0.625rem;
+}
+
+.result__description {
   color: var(--color-light-lavender);
 }
 
