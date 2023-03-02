@@ -204,6 +204,7 @@ main {
 /*************** footer ***************/
 
 footer {
+  font-size: var(--text-xs);
   position: absolute;
   bottom: 0;
   width: 100%;
