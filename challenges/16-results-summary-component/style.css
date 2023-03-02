@@ -70,6 +70,7 @@ main {
 .result__title {
   font-size: var(--text-lg);
   color: var(--color-light-lavender);
+  font-weight: bold;
 }
 
 .result__percentage {
@@ -89,6 +90,7 @@ main {
 .result__percentage p:first-child {
   font-size: 4rem;
   color: var(--color-pale-blue);
+  font-weight: bold;
 }
 
 .result__percentage p:last-child {
@@ -100,6 +102,7 @@ main {
   font-size: var(--text-xl);
   color: var(--color-pale-blue);
   margin-bottom: 0.625rem;
+  font-weight: bold;
 }
 
 .result__description {
@@ -115,6 +118,7 @@ main {
   font-size: var(--text-lg);
   color: var(--color-dark-gray-blue);
   margin-bottom: 1.8rem;
+  font-weight: bold;
 }
 
 .summary__items {
