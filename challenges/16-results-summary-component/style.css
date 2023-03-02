@@ -37,12 +37,14 @@ body {
 
 main {
   width: 40rem;
-  background-color: var(--color-light-red);
 }
 
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  background-color: var(--color-light-red);
 }
 
 .result {
@@ -56,6 +58,7 @@ main {
   text-align: center;
   padding: 2rem;
   gap: 1.5rem;
+  border-radius: 1.75rem;
 }
 
 .result__title {
