@@ -25,16 +25,23 @@
 body {
   position: relative;
   min-height: 100vh;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 main {
-  width: 500px;
-  height: 300px;
+  width: 36rem;
   background-color: var(--color-light-red);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.result {
+  background-color: var(--color-obalt-blue);
 }
 
 footer {
