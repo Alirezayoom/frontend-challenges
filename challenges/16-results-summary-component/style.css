@@ -32,6 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
 }
 
 main {
@@ -50,9 +51,31 @@ main {
   align-content: start;
   text-align: center;
   padding: 1.5rem 2rem;
+  gap: 1.5rem;
 }
 
 .result__title {
+  color: var(--color-light-lavender);
+}
+
+.result__percentage {
+  background-image: linear-gradient(to bottom, red, green);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 90rem;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+}
+
+.result__percentage p:first-child {
+  font-size: 2.5rem;
+  color: var(--color-pale-blue);
+}
+
+.result__percentage p:last-child {
+  font-size: 1rem;
+  color: var(--color-light-lavender);
 }
 
 footer {
