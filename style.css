@@ -16,7 +16,8 @@ body {
 }
 
 .inner-header {
-  width: 500px;
+  max-width: 64rem;
+  width: 100%;
   display: flex;
   padding: 20px 10px;
   justify-content: space-between;
@@ -33,8 +34,13 @@ body {
 
 /* main section that contains all cards */
 main {
+  max-width: 64rem;
+  width: 100%;
   text-align: center;
   display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
 }
 
@@ -46,9 +52,7 @@ main > h1 {
 /* card style */
 .card {
   display: grid;
-
-  height: 510px;
-  width: 500px;
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -58,12 +62,13 @@ main > h1 {
 .left {
   overflow: hidden;
   display: flex;
+
   justify-content: center;
 }
 
 .image {
   background-size: cover;
-
+  width: 100%;
   background-position: center center;
   align-items: center;
 }
@@ -113,11 +118,22 @@ main > h1 {
 }
 
 /* media queries */
-@media screen and (max-width: 500px) {
-  .card {
+@media screen and (max-width: 1030px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+  }
+  .inner-header {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr;
-    height: 500px;
-    max-width: 300px;
+    max-width: 360px;
+  }
+  .inner-header {
+    max-width: 360px;
   }
 }
