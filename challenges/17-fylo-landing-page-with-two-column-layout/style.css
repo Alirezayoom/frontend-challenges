@@ -29,3 +29,30 @@ nav ul li {
   list-style: none;
   color: hsl(243, 87%, 12%);
 }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero__text h1 {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__image img {
+  width: 100%;
+}
