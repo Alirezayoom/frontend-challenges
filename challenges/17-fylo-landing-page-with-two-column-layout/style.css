@@ -56,3 +56,21 @@ nav ul li {
 .hero__image img {
   width: 100%;
 }
+
+.hero form input {
+  padding: 0.5rem 1rem;
+  max-width: 20rem;
+  width: 100%;
+}
+
+.hero form button {
+  border: 0;
+  padding: 0.625rem 3rem;
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero form button:hover {
+  background-color: rgb(48, 101, 248, 0.9);
+}
