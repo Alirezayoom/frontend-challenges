@@ -5,7 +5,13 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "open sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "raleway", sans-serif;
 }
 
 .container {
@@ -73,4 +79,9 @@ nav ul li {
 
 .hero form button:hover {
   background-color: rgb(48, 101, 248, 0.9);
+}
+
+/*********** how fylo works ***********/
+.how-fylo-works {
+  background-color: hsl(240, 75%, 98%);
 }
