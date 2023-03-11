@@ -185,3 +185,11 @@ nav ul li {
 .testimonial__position {
   font-size: 0.625rem;
 }
+
+/*********** cta ***********/
+
+.cta {
+  padding: 8rem 0;
+  background-color: hsl(238, 22%, 44%);
+  color: #fff;
+}
