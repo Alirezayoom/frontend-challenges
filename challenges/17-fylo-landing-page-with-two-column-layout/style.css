@@ -197,6 +197,8 @@ nav ul li {
 .cta__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-items: center;
 }
 
 .cta h2 {
@@ -206,4 +208,12 @@ nav ul li {
 
 .cta p {
   max-width: 31.25rem;
+}
+
+.cta__form {
+  max-width: 31.25rem;
+}
+
+.cta__text {
+  justify-self: start;
 }
