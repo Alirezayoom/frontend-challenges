@@ -113,8 +113,23 @@ nav ul li {
   max-width: 500px;
 }
 
-.how-fylo-works__text a {
+.how-fylo-works__link {
   margin-bottom: 2rem;
+  display: flex;
+  max-width: max-content;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid transparent;
+}
+
+.how-fylo-works__link a {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+}
+
+.how-fylo-works__link:hover {
+  color: rgba(60, 159, 143, 0.6);
+  border-bottom: 1px solid rgba(60, 159, 143, 0.6);
 }
 
 .how-fylo-works__image {
