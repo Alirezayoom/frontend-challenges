@@ -105,12 +105,16 @@ nav ul li {
 }
 
 .how-fylo-works__text h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .how-fylo-works__text p {
   max-width: 500px;
+}
+
+.how-fylo-works__text a {
+  margin-bottom: 2rem;
 }
 
 .how-fylo-works__image {
