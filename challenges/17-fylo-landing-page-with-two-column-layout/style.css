@@ -252,15 +252,20 @@ footer {
 }
 
 .footer__details {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .logo {
   width: 8rem;
+  margin-bottom: 2rem;
 }
 
 .logo img {
   width: 100%;
   filter: brightness(0) invert(1);
+}
+
+footer ul {
+  list-style: none;
 }
