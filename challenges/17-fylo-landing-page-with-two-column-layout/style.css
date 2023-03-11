@@ -89,7 +89,7 @@ nav ul li {
 
 /*********** how fylo works ***********/
 .how-fylo-works {
-  padding: 8rem 0;
+  padding: 6rem 0;
   background-color: hsl(240, 75%, 98%);
   position: relative;
 }
@@ -189,7 +189,7 @@ nav ul li {
 /*********** cta ***********/
 
 .cta {
-  padding: 8rem 0;
+  padding: 6rem 0;
   background-color: hsl(238, 22%, 44%);
   color: #fff;
 }
