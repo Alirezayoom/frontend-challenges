@@ -39,7 +39,6 @@ nav ul li {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8rem;
   align-items: center;
   margin-bottom: 8rem;
 }
