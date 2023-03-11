@@ -68,14 +68,15 @@ nav ul li {
 }
 
 .hero form input {
-  padding: 0.5rem 1rem;
+  padding: 0.875rem 1rem;
   max-width: 20rem;
   width: 100%;
+  margin-right: 0.5rem;
 }
 
 .hero form button {
-  border: 0;
-  padding: 0.625rem 3rem;
+  border: 1px solid hsl(224, 93%, 58%);
+  padding: 0.875rem 4rem;
   background-color: hsl(224, 93%, 58%);
   color: #fff;
   cursor: pointer;
@@ -83,6 +84,7 @@ nav ul li {
 
 .hero form button:hover {
   background-color: rgb(48, 101, 248, 0.9);
+  border: 1px solid rgb(48, 101, 248, 0.9);
 }
 
 /*********** how fylo works ***********/
