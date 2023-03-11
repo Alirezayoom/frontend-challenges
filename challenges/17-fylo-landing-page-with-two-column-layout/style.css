@@ -238,3 +238,29 @@ nav ul li {
 .cta__text {
   justify-self: start;
 }
+
+/*********** footer ***********/
+
+footer {
+  padding: 6rem 0 2rem;
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+}
+
+.footer__container {
+  display: grid;
+}
+
+.footer__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.logo img {
+  width: 100%;
+  filter: brightness(0) invert(1);
+}
