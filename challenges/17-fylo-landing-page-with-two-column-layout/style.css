@@ -47,6 +47,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 37.5rem;
 }
 
 .hero__text h1 {
