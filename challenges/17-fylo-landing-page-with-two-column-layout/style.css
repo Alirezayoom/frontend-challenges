@@ -120,9 +120,6 @@ nav ul li {
   align-items: center;
   gap: 5px;
   border-bottom: 1px solid transparent;
-}
-
-.how-fylo-works__link a {
   color: hsl(170, 45%, 43%);
   text-decoration: none;
 }
