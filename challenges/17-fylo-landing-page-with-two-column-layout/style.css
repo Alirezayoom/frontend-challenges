@@ -123,7 +123,7 @@ nav ul li {
 }
 
 .how-fylo-works__text p {
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 
 .how-fylo-works__link {
@@ -192,4 +192,18 @@ nav ul li {
   padding: 8rem 0;
   background-color: hsl(238, 22%, 44%);
   color: #fff;
+}
+
+.cta__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  max-width: 31.25rem;
 }
