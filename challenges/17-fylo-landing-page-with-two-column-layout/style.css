@@ -129,9 +129,6 @@ nav ul li {
   border-bottom: 1px solid rgba(60, 159, 143, 0.6);
 }
 
-.how-fylo-works__image {
-}
-
 .how-fylo-works__image img {
   width: 100%;
 }
@@ -144,8 +141,16 @@ nav ul li {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
+.testimonial p {
+  font-size: 0.875rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
 .testimonial__info {
   display: flex;
+  align-items: center;
+  gap: 0.875rem;
 }
 
 .testimonial__image {
@@ -161,4 +166,9 @@ nav ul li {
 
 .testimonial__name {
   font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.testimonial__position {
+  font-size: 0.625rem;
 }
