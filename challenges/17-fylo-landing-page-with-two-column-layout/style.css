@@ -214,6 +214,27 @@ nav ul li {
   max-width: 31.25rem;
 }
 
+.cta__form form input {
+  padding: 0.875rem 1rem;
+  max-width: 100%;
+  width: 100%;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta__form button {
+  border: 1px solid hsl(224, 93%, 58%);
+  padding: 0.875rem 2rem;
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.cta__form button:hover {
+  background-color: rgb(48, 101, 248, 0.9);
+  border: 1px solid rgb(48, 101, 248, 0.9);
+}
+
 .cta__text {
   justify-self: start;
 }
