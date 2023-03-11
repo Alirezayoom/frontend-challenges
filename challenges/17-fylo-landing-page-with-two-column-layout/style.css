@@ -91,6 +91,19 @@ nav ul li {
 .how-fylo-works {
   padding: 5rem 0;
   background-color: hsl(240, 75%, 98%);
+  position: relative;
+}
+
+.how-fylo-works::before {
+  position: absolute;
+  z-index: -1;
+  top: -6rem;
+  content: "";
+  height: 10rem;
+  width: 100%;
+  background-image: url("./images/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .how-fylo-works__container {
