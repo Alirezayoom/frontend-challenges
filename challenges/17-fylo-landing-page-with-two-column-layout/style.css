@@ -86,5 +86,60 @@ nav ul li {
 
 /*********** how fylo works ***********/
 .how-fylo-works {
+  padding: 5rem 0;
   background-color: hsl(240, 75%, 98%);
+}
+
+.how-fylo-works__container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 55% 45%;
+}
+
+.how-fylo-works__text {
+  display: grid;
+  gap: 1rem;
+}
+
+.how-fylo-works__text h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.how-fylo-works__text p {
+  max-width: 500px;
+}
+
+.how-fylo-works__image {
+}
+
+.how-fylo-works__image img {
+  width: 100%;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  max-width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.testimonial__info {
+  display: flex;
+}
+
+.testimonial__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 20rem;
+  overflow: hidden;
+}
+
+.testimonial__image img {
+  width: 100%;
+}
+
+.testimonial__name {
+  font-weight: bold;
 }
