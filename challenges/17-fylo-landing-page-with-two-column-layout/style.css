@@ -281,3 +281,15 @@ footer a {
 footer a:hover {
   color: hsl(238, 22%, 44%);
 }
+
+footer .footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__contact div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
