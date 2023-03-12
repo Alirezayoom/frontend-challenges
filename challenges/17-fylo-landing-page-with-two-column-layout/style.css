@@ -293,3 +293,9 @@ footer .footer__contact {
   align-items: center;
   gap: 0.5rem;
 }
+
+.social {
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+}
