@@ -306,6 +306,9 @@ footer .footer__contact {
 /*********** responsive ***********/
 
 @media screen and (max-width: 64rem) {
+  .container {
+    padding: 0 2rem;
+  }
   .hero {
     grid-template-columns: 1fr;
     max-width: 48rem;
@@ -321,5 +324,23 @@ footer .footer__contact {
     max-width: 40rem;
     margin: 0 auto;
     margin-bottom: 2rem;
+  }
+  .how-fylo-works__container {
+    grid-template-columns: 1fr;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  .how-fylo-works__text {
+    grid-row: 2/3;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .how-fylo-works h2 {
+    margin-bottom: 1rem;
+  }
+  .how-fylo-works__text p,
+  .how-fylo-works__link,
+  .testimonial {
+    margin: 0 auto;
   }
 }
