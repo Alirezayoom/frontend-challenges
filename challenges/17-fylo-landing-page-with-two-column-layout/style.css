@@ -365,6 +365,9 @@ footer .footer__contact {
 }
 
 @media screen and (max-width: 48em) {
+  nav {
+    padding: 3rem 0;
+  }
   .footer__details {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -377,6 +380,9 @@ footer .footer__contact {
 @media screen and (max-width: 35rem) {
   .container {
     padding: 0 1rem;
+  }
+  nav {
+    padding: 2rem 0;
   }
   nav .logo {
     width: 5rem;
@@ -394,6 +400,16 @@ footer .footer__contact {
   .hero form button {
     padding: 0.875rem;
     max-width: 300px;
+    width: 100%;
+  }
+
+  .cta__form form input {
+    max-width: 20rem;
+    margin-right: 0;
+    width: 100%;
+  }
+  .cta__form button {
+    max-width: 20rem;
     width: 100%;
   }
 }
