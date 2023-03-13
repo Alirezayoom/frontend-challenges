@@ -343,4 +343,11 @@ footer .footer__contact {
   .testimonial {
     margin: 0 auto;
   }
+  .cta__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .cta__text {
+    margin: 0 auto;
+  }
 }
