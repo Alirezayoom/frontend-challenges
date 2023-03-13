@@ -302,3 +302,24 @@ footer .footer__contact {
   align-items: start;
   gap: 2rem;
 }
+
+/*********** responsive ***********/
+
+@media screen and (max-width: 64rem) {
+  .hero {
+    grid-template-columns: 1fr;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  .hero__text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
+  .hero__image {
+    grid-row: 1/2;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
