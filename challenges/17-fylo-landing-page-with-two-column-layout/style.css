@@ -351,3 +351,13 @@ footer .footer__contact {
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: 48em) {
+  .footer__details {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .social {
+    margin: 0 auto;
+  }
+}
