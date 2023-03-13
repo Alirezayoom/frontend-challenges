@@ -23,6 +23,7 @@ h3 {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 4rem 0;
 }
 
@@ -34,6 +35,17 @@ nav ul {
 nav ul li {
   list-style: none;
   color: hsl(243, 87%, 12%);
+}
+
+nav .logo {
+  width: 8rem;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 100%;
 }
 
 .hero {
@@ -359,5 +371,29 @@ footer .footer__contact {
   }
   .social {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .container {
+    padding: 0 1rem;
+  }
+  nav .logo {
+    width: 5rem;
+  }
+  nav ul {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  .hero form input {
+    max-width: 300px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .hero form button {
+    padding: 0.875rem;
+    max-width: 300px;
+    width: 100%;
   }
 }
