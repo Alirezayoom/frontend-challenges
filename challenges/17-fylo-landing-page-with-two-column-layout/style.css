@@ -264,7 +264,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-.logo img {
+footer .logo img {
   width: 100%;
   filter: brightness(0) invert(1);
 }
