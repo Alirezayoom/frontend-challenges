@@ -36,11 +36,13 @@ nav button {
 .hero h1 {
   margin-bottom: 2rem;
   font-size: 3rem;
+  color: hsl(192, 100%, 9%);
 }
 
 .hero p {
   margin: 0 auto 2rem;
   max-width: 35rem;
+  color: hsl(192, 100%, 9%);
 }
 
 .hero button {
