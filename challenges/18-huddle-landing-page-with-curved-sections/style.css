@@ -23,3 +23,28 @@ nav button {
   padding: 0 2rem;
   cursor: pointer;
 }
+
+.hero {
+  text-align: center;
+  margin: 12rem 0 6rem;
+}
+
+.hero h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 0 auto 2rem;
+  max-width: 35rem;
+}
+
+.hero button {
+  background: hsl(322, 100%, 66%);
+  color: #fff;
+  border: none;
+  border-radius: 10rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
