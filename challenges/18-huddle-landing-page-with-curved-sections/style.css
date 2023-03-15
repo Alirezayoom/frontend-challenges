@@ -8,3 +8,18 @@
   max-width: 90rem;
   margin: 0 auto;
 }
+
+nav {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav button {
+  background: #fff;
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 10rem;
+  padding: 0 2rem;
+  cursor: pointer;
+}
