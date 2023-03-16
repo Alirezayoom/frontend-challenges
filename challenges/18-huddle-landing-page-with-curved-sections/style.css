@@ -88,3 +88,40 @@ nav button {
   font-size: 1.5rem;
   color: #666;
 }
+
+.together {
+  position: relative;
+  background: hsl(207, 100%, 98%);
+  margin: 16rem 0;
+}
+
+.together::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+
+  background-image: url("./images/bg-section-top-desktop-1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.together::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+
+  background-image: url("./images/bg-section-bottom-desktop-1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
