@@ -125,3 +125,30 @@ nav button {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.together__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  color: hsl(192, 100%, 9%);
+}
+
+.together__text h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.together__text p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.together__image {
+  width: 100%;
+}
+
+.together__image img {
+  width: 100%;
+}
