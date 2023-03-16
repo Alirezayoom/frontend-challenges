@@ -92,7 +92,7 @@ nav button {
 .together {
   position: relative;
   background: hsl(207, 100%, 98%);
-  margin: 16rem 0;
+  margin: 20rem 0;
 }
 
 .together::before {
@@ -126,7 +126,8 @@ nav button {
   background-repeat: no-repeat;
 }
 
-.together__container {
+.together__container,
+.conversations__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -135,20 +136,30 @@ nav button {
   color: hsl(192, 100%, 9%);
 }
 
-.together__text h2 {
+.together__text h2,
+.conversations__text h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
-.together__text p {
-  font-size: 1.4rem;
+.together__text p,
+.conversations__text p {
+  font-size: 1.3rem;
   line-height: 1.5;
 }
 
-.together__image {
+.together__image,
+.conversations__image {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
-.together__image img {
-  width: 100%;
+.together__image img,
+.conversations__image img {
+  width: 90%;
+}
+
+.conversations {
+  margin: 20rem 0;
 }
