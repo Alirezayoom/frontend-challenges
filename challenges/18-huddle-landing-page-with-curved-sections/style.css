@@ -10,6 +10,9 @@ body {
   max-width: 90rem;
   margin: 0 auto;
 }
+button:hover {
+  cursor: pointer;
+}
 nav {
   padding: 2rem;
   display: flex;
@@ -21,7 +24,6 @@ nav button {
   border: 1px solid hsl(322, 100%, 66%);
   border-radius: 10rem;
   padding: 0 2rem;
-  cursor: pointer;
 }
 .hero {
   text-align: center;
@@ -37,7 +39,8 @@ nav button {
   max-width: 35rem;
   color: hsl(192, 100%, 9%);
 }
-.hero button {
+.hero button,
+main section:last-child button {
   background: hsl(322, 100%, 66%);
   color: #fff;
   border: none;
@@ -83,6 +86,7 @@ main section:first-child::after {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -146,4 +150,13 @@ main section:nth-child(3)::before {
 main section:nth-child(3)::after {
   bottom: -100%;
   background-image: url("./images/bg-section-bottom-desktop-2.svg");
+}
+main section:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section:last-child h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
