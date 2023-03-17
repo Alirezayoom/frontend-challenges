@@ -159,4 +159,5 @@ main section:last-child {
 main section:last-child h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
+  color: hsl(192, 100%, 9%);
 }
