@@ -67,8 +67,13 @@ main section:last-child button:hover,
 
 .hero__image {
   margin-bottom: 6rem;
+  padding: 2rem;
+}
+.hero__image img {
+  width: 100%;
 }
 .hero__communities-messages {
+  padding: 0 2rem;
   max-width: 60rem;
   margin: 0 auto;
   display: flex;
