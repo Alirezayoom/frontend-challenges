@@ -26,6 +26,11 @@ nav button {
   border: 1px solid hsl(322, 100%, 66%);
   border-radius: 10rem;
   padding: 0 2rem;
+  box-shadow: 0 0 20px 0 rgba(255, 143, 216, 0.2);
+  transition: all 0.2s;
+}
+button:hover {
+  box-shadow: 0 0 20px 0 rgba(255, 143, 216, 0.4);
 }
 .hero {
   text-align: center;
@@ -50,7 +55,16 @@ main section:last-child button {
   padding: 1rem 3rem;
   cursor: pointer;
   margin-bottom: 4rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
 }
+.hero button:hover,
+main section:last-child button:hover,
+.footer__form form button:hover {
+  background-color: hsl(321, 100%, 78%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 .hero__image {
   margin-bottom: 6rem;
 }
@@ -234,4 +248,6 @@ footer::after {
   color: #fff;
   border: none;
   border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
 }
