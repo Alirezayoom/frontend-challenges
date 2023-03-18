@@ -170,7 +170,7 @@ footer {
   position: relative;
   background-color: hsl(192, 100%, 9%);
   color: #fff;
-  padding: 10rem;
+  padding: 10rem 2rem;
   margin-top: 20rem;
 }
 .footer__container {
@@ -184,6 +184,51 @@ footer::after {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.footer__text {
+  max-width: 20rem;
+}
+.footer__text p {
+  margin-bottom: 1.5rem;
+}
+.footer__logo {
+  width: 16rem;
+  margin-bottom: 1rem;
+}
 .footer__logo img {
+  width: 100%;
   filter: brightness(0) invert(1);
+}
+.footer__phone,
+.footer__email {
+  display: flex;
+  gap: 2rem;
+}
+.footer__phone {
+  margin-bottom: 1rem;
+}
+.footer__form p:first-child {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.footer__form p:nth-child(2) {
+  width: 23rem;
+  margin-bottom: 1rem;
+}
+.footer__form form {
+  display: flex;
+  gap: 2rem;
+}
+.footer__form form input {
+  width: 20rem;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+.footer__form form button {
+  padding: 0.5rem 2rem;
+  background: hsl(322, 100%, 66%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
 }
