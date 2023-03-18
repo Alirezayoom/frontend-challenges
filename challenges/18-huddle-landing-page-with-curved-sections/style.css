@@ -40,6 +40,7 @@ button:hover {
   margin-bottom: 2rem;
   font-size: 3rem;
   color: hsl(192, 100%, 9%);
+  padding: 0 2rem;
 }
 .hero p {
   margin: 0 auto 2rem;
@@ -255,4 +256,63 @@ footer::after {
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
   transition: all 0.2s;
+}
+
+@media screen and (max-width: 64em) {
+  .hero {
+    max-width: 48rem;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__communities-messages {
+    padding: 0 8rem;
+  }
+  .hero__communities-count,
+  .hero__messages-count {
+    font-size: 4rem;
+  }
+  .hero__communities-text,
+  .hero__messages-text {
+    font-size: 1.125rem;
+  }
+  .section__container {
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+  .section__text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.3rem;
+  }
+  .section__text p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  main section:last-child h2 {
+    font-size: 2.5rem;
+  }
+  main section:first-child,
+  main section:nth-child(2),
+  main section:nth-child(3) {
+    margin: 10rem 0;
+  }
+  main section:last-child {
+    margin-bottom: 0;
+  }
+  footer {
+    margin-top: 10rem;
+    padding: 10rem 2rem;
+  }
+  .hero__image {
+    margin-bottom: 0;
+  }
+  .footer__form form {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer__form form input {
+    margin-bottom: 0;
+    width: auto;
+  }
 }
