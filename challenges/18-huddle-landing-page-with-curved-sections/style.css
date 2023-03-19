@@ -316,3 +316,20 @@ footer::after {
     width: auto;
   }
 }
+@media screen and (max-width: 48em) {
+  main section:first-child::before {
+    background-image: url("./images/bg-section-top-mobile-1.svg");
+  }
+  main section:first-child::after {
+    background-image: url("./images/bg-section-bottom-mobile-2.svg");
+  }
+  main section:nth-child(3)::before {
+    background-image: url("./images/bg-section-top-mobile-1.svg");
+  }
+  main section:nth-child(3)::after {
+    background-image: url("./images/bg-section-bottom-mobile-2.svg");
+  }
+  footer::after {
+    background-image: url("./images/bg-footer-top-mobile.svg");
+  }
+}
