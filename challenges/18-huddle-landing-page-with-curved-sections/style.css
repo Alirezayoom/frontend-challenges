@@ -338,6 +338,25 @@ footer::after {
   .section__container {
     display: flex;
     flex-direction: column-reverse;
-    gap: 2rem;
+    gap: 4rem;
+    text-align: center;
+  }
+  .section__container .section__image {
+    max-width: 400px;
+  }
+  .section__text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  main section:first-child,
+  main section:nth-child(2),
+  main section:nth-child(3) {
+    padding: 5rem 0;
+  }
+  main section:last-child h2 {
+    font-size: 2rem;
+  }
+  footer {
+    margin-top: 5rem;
   }
 }
