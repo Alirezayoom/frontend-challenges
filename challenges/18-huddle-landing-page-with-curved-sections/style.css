@@ -359,4 +359,9 @@ footer::after {
   footer {
     margin-top: 5rem;
   }
+  .footer__container {
+    display: grid;
+    gap: 4rem;
+    justify-content: center;
+  }
 }
