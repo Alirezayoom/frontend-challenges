@@ -424,4 +424,30 @@ footer::after {
   .hero__messages-text {
     font-size: 1rem;
   }
+  .section__text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  main section:first-child,
+  main section:nth-child(2),
+  main section:nth-child(3) {
+    padding: 5rem 0;
+  }
+  main section:last-child h2 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .section__container p {
+    max-width: 420px;
+    font-size: 1rem;
+  }
+  .section__text h2 {
+    font-size: 1.5rem;
+  }
+  main section:first-child,
+  main section:nth-child(2),
+  main section:nth-child(3) {
+    margin: 5rem 0;
+  }
 }
