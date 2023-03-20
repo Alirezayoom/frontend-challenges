@@ -332,4 +332,12 @@ footer::after {
   footer::after {
     background-image: url("./images/bg-footer-top-mobile.svg");
   }
+  main section:nth-child(2) .section__container {
+    flex-direction: column;
+  }
+  .section__container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
 }
