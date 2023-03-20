@@ -364,4 +364,7 @@ footer::after {
     gap: 4rem;
     justify-content: center;
   }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 }
