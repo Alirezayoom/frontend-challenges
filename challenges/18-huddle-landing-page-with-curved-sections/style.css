@@ -367,4 +367,13 @@ footer::after {
   .hero h1 {
     font-size: 2.5rem;
   }
+  nav button {
+    padding: 0 1.5rem;
+  }
+  .nav__logo {
+    width: 160px;
+  }
+  .nav__logo img {
+    width: 100%;
+  }
 }
