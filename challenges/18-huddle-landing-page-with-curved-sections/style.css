@@ -239,7 +239,7 @@ footer::after {
   text-transform: uppercase;
 }
 .footer__form p:nth-child(2) {
-  width: 23rem;
+  max-width: 23rem;
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
@@ -248,7 +248,7 @@ footer::after {
   gap: 2rem;
 }
 .footer__form form input {
-  width: 20rem;
+  max-width: 20rem;
   padding: 0.625rem;
   outline: none;
   border-radius: 5px;
@@ -373,6 +373,12 @@ footer::after {
   .footer__form {
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+  .footer__logo {
+    max-width: 10rem;
+  }
+  .footer__logo img {
+    width: 100%;
   }
   .hero h1 {
     font-size: 2.5rem;
